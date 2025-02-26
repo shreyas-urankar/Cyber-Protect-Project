@@ -1,22 +1,17 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import "./App.css";
+import Footer from "./components/Footer";
+import "./styles/App.css";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <HeroSection />
-    </div>
+      <Footer />
+    </>
   );
 }
 
-
-export default App;
-
-
-
-
-
-
+export default App;
