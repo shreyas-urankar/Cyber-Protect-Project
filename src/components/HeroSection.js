@@ -23,7 +23,9 @@ const HeroSection = () => {
         <img src={logo} alt="Logo" className="logo" />
       </div>
       <footer className="footer">
+        <p className="contact-mail">For any query contact us at :<a href="mailto:scyberprotect@gmail.com">scyberprotect@gmail.com</a></p>
         <div className="footer-icons">
+          <br></br>
           <a href="https://www.linkedin.com/company/cyber-protect-solutions" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
