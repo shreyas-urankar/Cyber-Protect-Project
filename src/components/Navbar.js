@@ -47,7 +47,7 @@ const Navbar = () => {
               <ul className="dropdown-menu">
                 {item === "Contact" ? (
                   <>
-                    <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/company/cyber-protect-solutions" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a></li>
                     <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a></li>
                     <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /> Facebook</a></li>
                   </>

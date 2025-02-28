@@ -24,7 +24,7 @@ const HeroSection = () => {
       </div>
       <footer className="footer">
         <div className="footer-icons">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://www.linkedin.com/company/cyber-protect-solutions" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
         </div>
