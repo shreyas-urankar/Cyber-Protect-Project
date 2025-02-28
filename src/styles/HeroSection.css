@@ -220,14 +220,12 @@ html, body {
 .contact-mail{
   text-shadow: 0px 0px 10px #00f7ff, 0px 0px 20px #00f7ff;
   font-size: 14px;
+  margin-left: 30px;
   font-family: 'Courier New', Courier, monospace;
   color: inherit;
+  justify-content: right;
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-.contact-mail:hover{
-  color: #ff0077;
-  text-shadow: 0px 0px 2px #ff0077, 0px 0px 2px #ff0077;
 }
 .contact-mail a{
   font-size: 14px;
@@ -235,7 +233,6 @@ html, body {
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-
 .contact-mail a:hover {
   color: #ff0077;
   text-shadow: 0px 0px 2px #ff0077, 0px 0px 2px #ff0077;
