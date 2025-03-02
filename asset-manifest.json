@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cyber-protect-app/static/css/main.94833549.css",
-    "main.js": "/cyber-protect-app/static/js/main.c472627b.js",
+    "main.css": "/cyber-protect-app/static/css/main.15d638b6.css",
+    "main.js": "/cyber-protect-app/static/js/main.e5e8842b.js",
     "static/media/background.mp4": "/cyber-protect-app/static/media/background.e11c35b071f72f5d8fa8.mp4",
     "static/media/Cutout of logo (2) (1).png": "/cyber-protect-app/static/media/Cutout of logo (2) (1).25afe92bf194596b1605.png",
     "static/media/logo.jpg": "/cyber-protect-app/static/media/logo.701806c1554bfcc96d70.jpg",
     "index.html": "/cyber-protect-app/index.html",
-    "main.94833549.css.map": "/cyber-protect-app/static/css/main.94833549.css.map",
-    "main.c472627b.js.map": "/cyber-protect-app/static/js/main.c472627b.js.map"
+    "main.15d638b6.css.map": "/cyber-protect-app/static/css/main.15d638b6.css.map",
+    "main.e5e8842b.js.map": "/cyber-protect-app/static/js/main.e5e8842b.js.map"
   },
   "entrypoints": [
-    "static/css/main.94833549.css",
-    "static/js/main.c472627b.js"
+    "static/css/main.15d638b6.css",
+    "static/js/main.e5e8842b.js"
   ]
 }
