@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Cyber-Protect-App/static/css/main.15d638b6.css",
+    "main.js": "/Cyber-Protect-App/static/js/main.49249605.js",
+    "static/media/background.mp4": "/Cyber-Protect-App/static/media/background.e11c35b071f72f5d8fa8.mp4",
+    "static/media/Cutout of logo (2) (1).png": "/Cyber-Protect-App/static/media/Cutout of logo (2) (1).25afe92bf194596b1605.png",
+    "static/media/logo.jpg": "/Cyber-Protect-App/static/media/logo.701806c1554bfcc96d70.jpg",
+    "index.html": "/Cyber-Protect-App/index.html",
+    "main.15d638b6.css.map": "/Cyber-Protect-App/static/css/main.15d638b6.css.map",
+    "main.49249605.js.map": "/Cyber-Protect-App/static/js/main.49249605.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15d638b6.css",
+    "static/js/main.49249605.js"
+  ]
+}
