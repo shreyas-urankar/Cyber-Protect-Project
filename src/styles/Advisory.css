@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Advisory Section */
+.advisory {
+    background-color: #ffffff; /* Ensures white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 50px;
+    min-height: 100vh; /* Makes sure it covers full viewport */
+}
+
+/* Text Content */
+.advisory .content {
+    max-width: 600px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.advisory h1 {
+    font-size: 2.5em;
+    color: #222;
+    font-weight: bold;
+}
+
+.advisory p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.advisory button {
+    background-color: #d62839;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.advisory button:hover {
+    background-color: #b71c28;
+}
+
+/* Image Styling */
+.advisory .image-container img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .advisory {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .advisory h1 {
+        font-size: 2em;
+    }
+
+    .advisory p {
+        font-size: 1.1em;
+    }
+
+    .advisory .image-container img {
+        width: 100%;
+        max-width: 350px;
+    }
+}
