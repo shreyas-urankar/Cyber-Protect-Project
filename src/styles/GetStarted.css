@@ -14,12 +14,14 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
+    /* background: url('../assets/getstarted.png') no-repeat center center; */
+    background-color: #222;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
 }
 
+
 .popup {
-    background: #fff;
+    background: white;
     width: 50%;
     padding: 30px;
     border-radius: 12px;
@@ -43,7 +45,8 @@ body {
     color: #d62839;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: #222;
 }
 
@@ -96,12 +99,13 @@ label {
     transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-.radio-label input:checked + .custom-radio {
+.radio-label input:checked+.custom-radio {
     background-color: #d62839;
     border-color: #d62839;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 12px;
     margin-top: 5px;
@@ -110,7 +114,8 @@ input, select {
     transition: border 0.3s ease;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     border-color: #d62839;
     outline: none;
 }
