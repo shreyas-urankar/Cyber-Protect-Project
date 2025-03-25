@@ -96,6 +96,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
+    text-align: center;
 }
 
 .tech-icon-main {
@@ -133,6 +134,7 @@ body {
 
 .content-block {
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .content-block h3 {
