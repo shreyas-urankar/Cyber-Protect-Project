@@ -1,12 +1,10 @@
 import React from 'react';
-// import '../styles/compliance_assessment.css';
-
+import '../styles/compliance_assessment.css';
 
 const App = () => {
   const handleComplianceClick = (type) => {
-    alert(`You selected: ${type}`);
+    alert(`You selected: ${ type }`);
   };
-
 
   return (
     <div className="body">
@@ -19,7 +17,6 @@ const App = () => {
           <button className="hero-button">Contact Us</button>
         </div>
       </div>
-
 
       {/* About Section */}
       <div className="about">
@@ -43,7 +40,6 @@ const App = () => {
           />
         </div>
       </div>
-
 
       {/* Cards Section */}
       <section className="DigiDefense-section">
@@ -98,7 +94,6 @@ const App = () => {
         </div>
       </section>
 
-
       {/* Assessing Section */}
       <section className="assessing-section">
         <div className="assessing-content-wrapper">
@@ -113,7 +108,6 @@ const App = () => {
           <button className="assessing-button">Get Started</button>
         </div>
       </section>
-
 
       {/* FAQ Section */}
       <section className="faq-section">
@@ -207,6 +201,4 @@ const App = () => {
   );
 };
 
-
 export default App;
-
