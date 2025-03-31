@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/CaseStudies.css";
-import CaseStudyImage from "../assets/CaseStudy.jpg";
+import CaseStudy from "../assets/caseStudy.png"
 import Navbar from "../components/Navbar";
 
 const CaseStudies = () => {
