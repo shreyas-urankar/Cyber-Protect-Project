@@ -16,6 +16,7 @@
     --success: #00d26a;
     --warning: #ffc107;
     --danger: #ff416c;
+    --title-bg: #A91E22;
 }
 
 body {
@@ -26,9 +27,6 @@ body {
 
 .service-page-container {
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../assets/bg.jpg");
-    background-size: cover;
-    background-attachment: fixed;
     position: relative;
     display: flex;
     flex-direction: column;
