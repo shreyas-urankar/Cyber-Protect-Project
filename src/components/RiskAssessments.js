@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/RiskAssessments.css";
 import logo from "../assets/logo.jpg";
-import riskBackground from "../assets/risk.jpg";
+// import riskBackground from "../assets/risk.jpg";
 
 const RiskAssessments = () => {
   return (
-    <div className="risk-container" style={{ backgroundImage: `url(${riskBackground})` }}>
+    <div className="risk-container">
       <header className="risk-header">
         <h1>Risk Assessments</h1>
         <p className="animated-text">
