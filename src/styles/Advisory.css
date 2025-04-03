@@ -8,7 +8,7 @@ body {
 
 /* Advisory Section */
 .advisory {
-    background-color: #ffffff; /* Ensures white background */
+    background-color: #008080; /* Ensures white background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,13 +34,13 @@ body {
 
 .advisory p {
     font-size: 1.2em;
-    color: #666;
+    color:white;
     margin-bottom: 20px;
 }
 
 .advisory button {
-    background-color: #d62839;
-    color: white;
+    background-color: white;
+    color:black;
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
@@ -50,7 +50,7 @@ body {
 }
 
 .advisory button:hover {
-    background-color: #b71c28;
+    background-color: red;
 }
 
 /* Image Styling */
