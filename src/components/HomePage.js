@@ -29,7 +29,6 @@ const HomePage = () => {
                     <p>
                         Your trusted defense against digital threats, securing data, IT, and brand integrity.
                     </p>
-                    <p className="launching-soon">🚀 <strong>Launching Soon</strong></p>
                     <img src={Cutout} alt="DigiDefence Cutout Logo" className="hero-logo" />
                 </div>
             </section>
