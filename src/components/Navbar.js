@@ -32,7 +32,8 @@ const Navbar = () => {
             </div>
 
             <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-            <li ><Link to="/">Home</Link></li>
+                <li><Link to="/">Home</Link></li>
+
                 <li className="dropdown"
                     onMouseEnter={() => setDropdown("services")}
                     onMouseLeave={() => setDropdown(null)}
@@ -42,35 +43,13 @@ const Navbar = () => {
                         <ul className="dropdown-menu">
                             <li><Link to="/technologyconsultant">Technology Consultancy</Link></li>
                             <li><Link to="/compliance_assessment">Compliance Assessment</Link></li>
-                            <li><Link to="/data-protection">Data Protection</Link></li>
                             <li><Link to="/risk-management">Risk Management</Link></li>
                         </ul>
                     )}
                 </li>
-
-                <li className="dropdown"
-                    onMouseEnter={() => setDropdown("products")}
-                    onMouseLeave={() => setDropdown(null)}
-                >
-                    <Link to="#">Products <FaChevronDown className="dropdown-icon" /></Link>
-                    {dropdown === "products" && (
-                        <ul className="dropdown-menu">
-                            <li><Link to="/firewall">AI Firewall</Link></li>
-                        </ul>
-                    )}
-                </li>
-
-                <li className="dropdown"
-                    onMouseEnter={() => setDropdown("services")}
-                    onMouseLeave={() => setDropdown(null)}
-                >
-                    <Link to="#">Who we are<FaChevronDown className="dropdown-icon" /></Link>
-                    {dropdown === "services" && (
-                        <ul className="dropdown-menu">
-                            <li><Link to="/aboutus">About Us</Link></li>
-                            <li><Link to="/digidefencebandits">DigiDefence Bandits</Link></li>
-                        </ul>
-                    )}
+                
+                <li>
+                    <Link to="/aboutus">About Us</Link>
                 </li>
 
                 <li className="dropdown"
@@ -80,7 +59,6 @@ const Navbar = () => {
                     <Link to="#">Resources <FaChevronDown className="dropdown-icon" /></Link>
                     {dropdown === "resources" && (
                         <ul className="dropdown-menu">
-                            <li><Link to="/advisory">Advisory</Link></li>
                             <li><Link to="/blog">Blog</Link></li>
                             <li><Link to="/case-studies">Case Studies</Link></li>
                         </ul>
