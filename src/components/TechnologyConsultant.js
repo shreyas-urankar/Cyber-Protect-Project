@@ -141,11 +141,21 @@ const TechnologyConsultant = () => {
             </p>
 
             <div className="industry-expertise">
-              <div className="industry-item">Finance</div>
-              <div className="industry-item">Healthcare</div>
-              <div className="industry-item">Government</div>
-              <div className="industry-item">E-commerce</div>
-              <div className="industry-item">Information Technology</div>
+              <div className="industry-item">
+                <h4>Finance</h4>
+              </div>
+              <div className="industry-item">
+                <h4>Healthcare</h4>
+              </div>
+              <div className="industry-item">
+                <h4>Government</h4>
+              </div>
+              <div className="industry-item">
+                <h4>E-commerce</h4>
+              </div>
+              <div className="industry-item">
+                <h4>Information Technology</h4>
+              </div>
             </div>
           </div>
 
@@ -210,7 +220,7 @@ const TechnologyConsultant = () => {
 
           {/* Why Choose Us? */}
           <div className="content-block">
-            <h3>Why Choose Us?</h3>
+            <h3>Why Choose Us ❓</h3>
             <p>
               Choosing the right technology consultancy partner is crucial for
               your business success. We differentiate ourselves by providing
@@ -250,29 +260,10 @@ const TechnologyConsultant = () => {
               </div>
             </div>
           </div>
-
-          <div className="industry-tag">
-            <p>Service: Technology Consultancy</p>
-          </div>
         </section>
-
-        {/* Call to Action */}
-        <div className="cta-section">
-          <h3>
-            Ready to transform your business with the right technology
-            solutions?
-          </h3>
-          <p>
-            Our team is here to help you navigate the ever-evolving tech
-            landscape.
-          </p>
-          <div className="cta-buttons">
-            <button className="cta-button">Get in Touch Today</button>
-            <button className="cta-button secondary">Learn More</button>
-          </div>
-        </div>
       </main>
     </div>
   );
 };
+
 export default TechnologyConsultant;

@@ -16,7 +16,7 @@ const AboutUs = () => {
         <section className="about-overview">
           <h2>Overview</h2>
           <div className="content-block">
-            <h3>Who We Are</h3>
+            <h3>Who We Are ❓</h3>
             <p>
               At CyberProtect Solutions, we're not just another cybersecurity
               company—we're your vigilant guardians in the ever-evolving
@@ -31,7 +31,7 @@ const AboutUs = () => {
           </div>
 
           <div className="content-block">
-            <h3>What We Offer</h3>
+            <h3>What We Offer ❓</h3>
             <div className="services-list">
               <div className="service-item">
                 <div className="service-icon compliance-icon"></div>
@@ -70,7 +70,7 @@ const AboutUs = () => {
           </div>
 
           <div className="content-block">
-            <h3>Why Choose Us?</h3>
+            <h3>Why Choose Us ❓</h3>
             <div className="advantages">
               <div className="advantage-item">
                 <div className="advantage-icon exp-icon"></div>
@@ -102,7 +102,7 @@ const AboutUs = () => {
           </div>
 
           <div className="content-block">
-            <h3>Join Our Quest</h3>
+            <h3>Join Our Quest ⭐️</h3>
             <p>
               Ready to embark on this epic adventure? Just watch this space and
               follow us! 🚀
@@ -113,10 +113,6 @@ const AboutUs = () => {
               powerful incantations for your security! 🔐✨
             </p>
           </div>
-
-          <div className="industry-tag">
-            <p>Industry: Technology, Information, and Internet</p>
-          </div>
         </section>
 
         {/* Quote Section */}
@@ -126,11 +122,6 @@ const AboutUs = () => {
             resilience."
           </blockquote>
           <cite>- Henry Solman, Co-Founder</cite>
-        </div>
-
-        {/* Call to Action */}
-        <div className="cta-section">
-          <button className="cta-button secondary">Learn More</button>
         </div>
       </main>
     </div>

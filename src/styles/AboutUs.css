@@ -36,7 +36,14 @@ body {
 }
 
 .about-us-container::before {
-  content: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32.5%;
+  background-color: #056774;
+  z-index: 0;
 }
 
 .header {
@@ -47,68 +54,6 @@ body {
   width: 100%;
   position: relative;
   z-index: 10;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  color: black;
-  position: relative;
-}
-
-.logo-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 20%;
-  margin-right: 1rem;
-  box-shadow: none;
-  transition: all 0.3s ease;
-}
-
-.logo:hover .logo-img {
-  transform: scale(1.05);
-  box-shadow: none;
-}
-
-.social-links {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.social-links span {
-  font-size: 0.9rem;
-  color: black;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.icons {
-  display: flex;
-  gap: 1.2rem;
-}
-
-.social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: none;
-  color: black;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.social-icon:hover {
-  background: none;
-  transform: translateY(-5px);
-  box-shadow: none;
 }
 
 .main-section {
@@ -127,13 +72,23 @@ body {
   text-align: center;
   width: 100%;
   max-width: 1000px;
+  color: white;
+}
+
+.header-section .main-title {
+  color: white !important;
+}
+
+.header-section .header-line {
+  background-color: white !important;
 }
 
 .main-title {
   font-size: 3rem;
   font-weight: 700;
-  color: black;
+  color: white;
   margin-bottom: 1rem;
+  margin-top: 10rem;
   text-shadow: none;
   position: relative;
   display: inline-block;
@@ -142,7 +97,7 @@ body {
 .header-line {
   height: 3px;
   width: 150px;
-  background: none;
+  background: white;
   margin: 0 auto;
 }
 
@@ -154,7 +109,7 @@ body {
 
 .about-overview h2 {
   font-size: 2.5rem;
-  color: black;
+  color: white;
   margin-bottom: 2rem;
   text-align: center;
   align-items: center;
@@ -230,11 +185,12 @@ body {
 .service-content h4 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: black;
+  color: #A91E22 !important;
+  font-weight: bold;
 }
 
 .service-content p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: black;
   line-height: 1.6;
 }
@@ -250,16 +206,15 @@ body {
   display: flex;
   gap: 1rem;
   padding: 1.5rem;
-  background: none;
   border-radius: 8px;
-  border: 1px solid black;
+  border: 4px solid #056774;
   transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
 }
 
 .advantage-item:hover {
-  background: none;
   transform: translateY(-5px);
-  box-shadow: none;
+  box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
 }
 
 .advantage-icon {
@@ -278,7 +233,8 @@ body {
 .advantage-content h4 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: black;
+  color: #A91E22;
+  font-weight: bold;
 }
 
 .advantage-content p {
@@ -286,30 +242,22 @@ body {
   color: black;
   line-height: 1.6;
 }
-
-.industry-tag {
-  display: inline-block;
-  background: none;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  margin-top: 1rem;
-  border: 1px solid black;
-}
-
-.industry-tag p {
-  font-size: 0.9rem;
-  color: black;
-}
-
 .quote-section {
   max-width: 800px;
   margin: 3rem auto;
   padding: 2rem;
   background: none;
   border-radius: 8px;
-  border: 1px solid black;
+  border-color: 4px solid #056774;
   position: relative;
   width: 100%;
+  box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
+  transition: all 0.3s ease;
+}
+
+.quote-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
 }
 
 .quote-section::before {
@@ -335,46 +283,6 @@ cite {
   text-align: right;
   font-size: 1rem;
   color: black;
-}
-
-.cta-section {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin: 3rem auto 1rem;
-  width: 100%;
-  max-width: 800px;
-}
-
-.cta-button {
-  padding: 0.75rem 1.5rem;
-  background: none;
-  color: black;
-  border: 1px solid black;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: none;
-}
-
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: none;
-}
-
-.cta-button.secondary {
-  background: none;
-  border: 1px solid black;
-  color: black;
-  box-shadow: none;
-}
-
-.cta-button.secondary:hover {
-  background: none;
-  transform: translateY(-3px);
-  box-shadow: none;
 }
 
 .footer-section {
@@ -543,4 +451,31 @@ cite {
 .support-icon::after {
   content: "🕒";
   font-size: 1.5rem;
+}
+
+/* Specific targeting for "Who We Are" section */
+.content-block:first-of-type h3,
+.content-block:first-of-type p {
+  color: white !important;
+}
+
+/* Specific targeting for "What We Offer" section */
+.content-block:nth-of-type(2) h3 {
+  color: #A91E22 !important;
+}
+
+/* Specific targeting for "Why Choose Us" section */
+.content-block:nth-of-type(3) h3 {
+  color: #A91E22 !important;
+}
+
+/* Specific targeting for "Join Our Quest" section */
+.content-block:nth-of-type(4) h3 {
+  color: #A91E22 !important;
+}
+
+/* Additional specific targeting for service content h4 */
+.services-list .service-content h4,
+.advantages .advantage-content h4 {
+  color: #A91E22 !important;
 }
