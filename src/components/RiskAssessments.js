@@ -64,7 +64,7 @@ const RiskAssessments = () => {
             <div className="risk-card-icon-wrapper">
               <img
                 src="https://img.icons8.com/ios-filled/50/45B7D1/analytics.png"
-                alt="Impact Assessment"
+                alt="Impact Assessment"A
                 className="risk-card-icon"
               />
             </div>
