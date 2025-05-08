@@ -1,496 +1,362 @@
-/* compliance_assessment.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Yatra+One&display=swap');
 
-/* Global Styles - REMOVED to prevent conflicts */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
-  color: #333;
+:root {
+    --primary: #000000;
+    --primary-light: #000000;
+    --secondary: #000000;
+    --dark: #ffffff;
+    --light: #ffffff;
+    --success: #000000;
+    --warning: #000000;
+    --danger: #000000;
 }
 
-/* Component Container */
-.compliance-assessment-container {
-  font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
-  color: #333;
-  box-sizing: border-box;
+.service-page-container {
+    min-height: 100vh;
+    background: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Reusable Classes */
-.compliance-red-heading {
-  color: #a91e22;
-  font-weight: 600;
+.service-page-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 21.5%;
+    background-color: #056774;
+    z-index: 0;
 }
 
-.compliance-same-heading {
-  font-size: 32px;
-  text-align: left;
+.main-section {
+    flex: 1;
+    padding: 2rem 4rem 3rem;
+    position: relative;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
 }
 
-/* Hero Section */
-.compliance-hero {
-  background-color: #056774;
-  color: white;
-  padding: 150px 10% 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 50vh;
-  min-height: 300px;
+.header-section {
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    color: white;
 }
 
-.compliance-hero-content {
-  max-width: 700px;
-  width: 100%;
+.main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 10rem;
+    text-shadow: none;
+    position: relative;
+    display: inline-block;
 }
 
-.compliance-hero-h1 {
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-align: left;
+.header-line {
+    height: 3px;
+    width: 150px;
+    background: white;
+    margin: 0 auto;
 }
 
-.compliance-hero-hr {
-  width: 120px;
-  height: 3px;
-  background-color: #B2D8D8;
-  border-radius: 50px;
-  margin: 16px 0;
-  border: none;
+.service-overview {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
 }
 
-.compliance-hero-p {
-  font-size: 22px;
-  font-weight: 300;
-  margin-bottom: 30px;
-  opacity: 0.9;
-  text-align: justify;
-  line-height: 1.6;
+.tech-icon-main {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: float 3s ease-in-out infinite;
 }
 
-.compliance-hero-button {
-  background-color: #ffffff;
-  color: #cb4d62;
-  border: none;
-  padding: 12px 28px;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-right: auto;
-  display: block;
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
-.compliance-hero-button:hover {
-  background-color: #f5f5f5;
+.service-intro {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 3rem;
+    margin-top: -2rem;
+    text-align: center;
 }
 
-/* About Section */
-.compliance-about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 80px 10%;
-  gap: 30px;
+.content-block {
+    margin-bottom: 3rem;
 }
 
-.compliance-about-text {
-  flex: 1;
-  min-width: 300px;
+.content-block h3 {
+    font-size: 2rem;
+    color: #A91E22;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
 }
 
-.compliance-about-text-h2 {
-  margin-bottom: 20px;
-  text-align: left;
+.content-block h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: none;
 }
 
-.compliance-about-text-p {
-  font-size: 16px;
-  font-weight: 300;
-  text-align: justify;
-  line-height: 1.7;
-  color: #444;
+.content-block p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: black;
+    margin-bottom: 1.2rem;
 }
 
-.compliance-about-img {
-  flex: 1;
-  min-width: 280px;
-  text-align: center;
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.compliance-about-img-img {
-  width: 90%;
-  max-width: 400px;
-  border-radius: 0;
-  border: 4px solid #eee;
+.service-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 4px solid #056774;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
 }
 
-/* DigiDefense Section */
-.compliance-DigiDefense-section {
-  padding: 80px 10%;
-  background-color: #f9f9f9;
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
 }
 
-.compliance-section-title {
-  margin-bottom: 20px;
-  text-align: left;
+.service-icon {
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #056774;
+    font-size: 1.5rem;
+    flex-shrink: 0;
 }
 
-.compliance-section-subtext {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 60px;
-  line-height: 1.6;
-  text-align: justify;
-  font-weight: 300;
+.service-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #A91E22;
 }
 
-.compliance-cards-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+.service-content p {
+    font-size: 0.95rem;
+    color: black;
+    line-height: 1.6;
 }
 
-.compliance-card {
-  background-color: #fff;
-  border: 4px solid #056774;
-  border-radius: 12px;
-  padding: 30px 25px;
-  width: 30%;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
-  text-align: left;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 3rem auto 1rem;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
 }
 
-.compliance-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+.cta-button {
+    padding: 0.75rem 1.5rem;
+    background: #A91E22;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: none;
 }
 
-.compliance-card-icon-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+.cta-button:hover {
+    transform: translateY(-3px);
+    background: #8b1a1e;
 }
 
-.compliance-card-icon {
-  width: 50px;
-  margin-bottom: 20px;
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
-.compliance-card-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #222;
-  text-align: left;
+.faq-item {
+    border: 4px solid #056774;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
 }
 
-.compliance-card-text {
-  font-size: 15px;
-  color: #444;
-  font-weight: 300;
-  line-height: 1.5;
-  text-align: justify;
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
 }
 
-/* Assessing Section */
-.compliance-assessing-section {
-  background-color: #056774;
-  color: #fff;
-  border: 2px solid #B2D8D8;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 40px 0 40px 10%;
-  margin-right: 0;
-  width: calc(100% - 10%);
+.faq-toggle {
+    display: none;
 }
 
-.compliance-assessing-content-wrapper {
-  padding: 50px 12%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
+.faq-question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    display: block;
+    text-align: left;
+    position: relative;
+    padding-right: 30px;
 }
 
-.compliance-assessing-content {
-  max-width: 70%;
+.faq-question::after {
+    content: "+";
+    font-size: 24px;
+    color: #A91E22;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
 }
 
-.compliance-assessing-content-h2 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  text-align: left;
+.faq-toggle:checked + .faq-question::after {
+    content: "-";
 }
 
-.compliance-assessing-content-p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
-  text-align: justify;
+.faq-answer {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5;
+    margin-top: 15px;
+    display: none;
+    text-align: left;
 }
 
-.compliance-assessing-button {
-  background-color: #a91e22;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 25px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.faq-toggle:checked + .faq-question + .faq-answer {
+    display: block;
 }
 
-.compliance-assessing-button:hover {
-  background-color: #8b1a1e;
-  transform: scale(1.05);
-}
-
-.compliance-assessing-button::after {
-  content: "→";
-  font-size: 18px;
-}
-
-/* FAQ Section */
-.compliance-faq-section {
-  padding: 80px 10%;
-  background-color: #fff;
-}
-
-.compliance-faq-section-h2 {
-  margin-bottom: 40px;
-  text-align: left;
-}
-
-.compliance-faq-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.compliance-faq-card {
-  background-color: #fff;
-  border: 4px solid #056774;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-}
-
-.compliance-faq-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
-}
-
-.compliance-faq-toggle {
-  display: none;
-}
-
-.compliance-faq-question {
-  font-size: 18px;
-  font-weight: 600;
-  color: #222;
-  cursor: pointer;
-  display: block;
-  text-align: left;
-  position: relative;
-  padding-right: 30px;
-}
-
-.compliance-faq-question::after {
-  content: "+";
-  font-size: 24px;
-  color: #a91e22;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: all 0.3s ease;
-}
-
-.compliance-faq-toggle:checked + .compliance-faq-question::after {
-  content: "-";
-}
-
-.compliance-faq-answer {
-  font-size: 15px;
-  color: #444;
-  line-height: 1.5;
-  margin-top: 15px;
-  display: none;
-  text-align: justify;
-}
-
-.compliance-faq-toggle:checked + .compliance-faq-question + .compliance-faq-answer {
-  display: block;
-}
-
-/* Compliance Types Grid */
 .compliance-types {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .compliance-button {
-  background-color: #fff;
-  border: 2px solid #008080;
-  border-radius: 8px;
-  padding: 10px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #333;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: 2px solid #056774;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .compliance-button:hover {
-  background-color: #f5f5f5;
+    background: #056774;
+    color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-  .compliance-cards-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .compliance-card {
-    width: 100%;
-  }
+@media (max-width: 1024px) {
+    .main-section {
+        padding: 2rem;
+    }
+    
+    .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .services-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
-  .compliance-same-heading {
-    font-size: 32px;
-  }
-
-  .compliance-hero {
-    padding: 60px 15px;
-  }
-
-  .compliance-hero-h1 {
-    font-size: 34px;
-  }
-
-  .compliance-hero-p {
-    font-size: 18px;
-  }
-
-  .compliance-hero-button {
-    padding: 10px 24px;
-    font-size: 16px;
-  }
-
-  .compliance-about {
-    flex-direction: column;
-    padding: 40px 15px;
-    gap: 20px;
-  }
-
-  .compliance-about-text,
-  .compliance-about-img {
-    width: 100%;
-  }
-
-  .compliance-about-img {
-    order: -1;
-  }
-
-  .compliance-about-img-img {
-    max-width: 100%;
-  }
-
-  .compliance-DigiDefense-section {
-    padding: 40px 15px;
-  }
-
-  .compliance-section-subtext {
-    font-size: 16px;
-  }
-
-  .compliance-card {
-    padding: 30px 15px;
-    width: 100%;
-  }
-
-  .compliance-card-text {
-    font-size: 16px;
-  }
-
-  .compliance-assessing-section {
-    border-radius: 60px 10px 60px 10px;
-    margin: 40px 15px;
-    width: auto;
-  }
-
-  .compliance-assessing-content-wrapper {
-    padding: 40px 20px;
-    flex-direction: column;
-  }
-
-  .compliance-assessing-content-h2 {
-    font-size: 24px;
-  }
-
-  .compliance-assessing-content-p {
-    font-size: 14px;
-    line-height: 1.8;
-  }
-
-  .compliance-assessing-button {
-    padding: 10px 20px;
-    font-size: 14px;
-    align-self: flex-start;
-  }
-
-  .compliance-faq-section {
-    padding: 40px 15px;
-  }
-
-  .compliance-faq-question {
-    font-size: 16px;
-  }
-
-  .compliance-faq-answer {
-    font-size: 14px;
-  }
-
-  .compliance-types {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .main-section {
+        padding: 1.5rem;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+        margin-top: 8rem;
+    }
+    
+    .service-intro {
+        font-size: 1.1rem;
+    }
+    
+    .content-block h3 {
+        font-size: 1.5rem;
+    }
+    
+    .content-block p {
+        font-size: 1rem;
+    }
+    
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .service-content h4 {
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
-  .compliance-hero-h1 {
-    font-size: 30px;
-  }
-  
-  .compliance-hero-p {
-    font-size: 16px;
-  }
-  
-  .compliance-hero-button {
-    font-size: 15px;
-  }
+    .main-title {
+        font-size: 1.8rem;
+    }
+    
+    .service-intro {
+        font-size: 1rem;
+    }
+    
+    .compliance-types {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
