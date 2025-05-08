@@ -1,385 +1,351 @@
-/* RiskAssessments.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Yatra+One&display=swap');
 
-/* Component Container */
-.risk-assessment-container {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    color: #333;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Reusable Classes */
-  .risk-red-heading {
-    color: #a91e22;
-    font-weight: 600;
-  }
-  
-  .risk-same-heading {
-    font-size: 32px;
-    text-align: left;
-  }
-  
-  /* Hero Section */
-  .risk-hero {
-    background-color: #008080;
-    color: white;
-    padding: 150px 10% 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #000000;
+    --primary-light: #000000;
+    --secondary: #000000;
+    --dark: #ffffff;
+    --light: #ffffff;
+    --success: #000000;
+    --warning: #000000;
+    --danger: #000000;
+}
+
+.service-page-container {
+    min-height: 100vh;
+    background: none;
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 50vh;
-    min-height: 300px;
-  }
-  
-  .risk-hero-content {
-    max-width: 700px;
+}
+
+.service-page-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-  }
-  
-  .risk-hero-h1 {
-    font-size: 50px;
+    height: 21.5%;
+    background-color: #056774;
+    z-index: 0;
+}
+
+.main-section {
+    flex: 1;
+    padding: 2rem 4rem 3rem;
+    position: relative;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.header-section {
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    color: white;
+}
+
+.main-title {
+    font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  .risk-hero-hr {
-    width: 120px;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 10rem;
+    text-shadow: none;
+    position: relative;
+    display: inline-block;
+}
+
+.header-line {
     height: 3px;
-    background-color: #B2D8D8;
-    border-radius: 50px;
-    margin: 16px 0;
-    border: none;
-  }
-  
-  .risk-hero-p {
-    font-size: 22px;
-    font-weight: 300;
-    margin-bottom: 30px;
-    opacity: 0.9;
-    text-align: justify;
-    line-height: 1.6;
-  }
-  
-  .risk-hero-button {
-    background-color: #ffffff;
-    color: #cb4d62;
-    border: none;
-    padding: 12px 28px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-right: auto;
-    display: block;
-  }
-  
-  .risk-hero-button:hover {
-    background-color: #f5f5f5;
-  }
-  
-  /* DigiDefense Section */
-  .risk-DigiDefense-section {
-    padding: 80px 10%;
-    background-color: #f9f9f9;
-  }
-  
-  .risk-section-title {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  .risk-section-subtext {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 60px;
-    line-height: 1.6;
-    text-align: justify;
-    font-weight: 300;
-  }
-  
-  .risk-cards-container {
+    width: 150px;
+    background: white;
+    margin: 0 auto;
+}
+
+.service-overview {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tech-icon-main {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.service-intro {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 3rem;
+    margin-top: -2rem;
+    text-align: center;
+}
+
+.content-block {
+    margin-bottom: 3rem;
+}
+
+.content-block h3 {
+    font-size: 2rem;
+    color: #A91E22;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.content-block p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: black;
+    margin-bottom: 1.2rem;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-item {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  .risk-card {
-    background-color: #fff;
-    border: 3px solid #66B2B2;
-    border-radius: 12px;
-    padding: 30px 25px;
-    width: calc(25% - 30px);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
-    text-align: left;
-    box-sizing: border-box;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 4px solid #056774;
     transition: all 0.3s ease;
-  }
-  
-  .risk-card:hover {
+    box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
+}
+
+.service-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
-  }
-  
-  .risk-card-icon-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .risk-card-icon {
+    box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
+}
+
+.service-icon {
     width: 50px;
     height: 50px;
-  }
-  
-  .risk-card-title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #222;
-    text-align: center;
-  }
-  
-  .risk-card-text {
-    font-size: 15px;
-    color: #444;
-    font-weight: 300;
-    line-height: 1.5;
-    text-align: justify;
-  }
-  
-  /* Image Sections */
-  .risk-image-section {
-    padding: 80px 10%;
-    background-color: #fff;
-  }
-  
-  .risk-image-section.alt {
-    background-color: #f9f9f9;
-  }
-  
-  .risk-image-content {
+    background-color: none;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .risk-image-text {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .risk-image-wrapper {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
-  }
-  
-  .risk-image-title {
-    font-size: 32px;
-    color: #a91e22;
-    margin-bottom: 20px;
-    font-weight: 600;
-  }
-  
-  .risk-image-description {
-    font-size: 16px;
+    justify-content: center;
+    color: #056774;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.service-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #A91E22;
+}
+
+.service-content p {
+    font-size: 0.95rem;
+    color: black;
     line-height: 1.6;
-    color: #444;
-    text-align: justify;
-  }
-  
-  .risk-section-image {
-    width: 100%;
-    max-width: 500px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.benefit-item {
+    padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border: 1px solid #e1e1e1;
-  }
-  
-  /* Case Study Section */
-  .risk-case-study-section {
-    background-color: #008080;
-    color: #fff;
-    border: 2px solid #B2D8D8;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    margin: 40px 0 40px 10%;
-    margin-right: 0;
-    width: calc(100% - 10%);
-  }
-  
-  .risk-case-study-content-wrapper {
-    padding: 50px 12%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .risk-case-study-content {
-    max-width: 70%;
-  }
-  
-  .risk-case-study-content-h2 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 15px;
+    border: 4px solid #056774;
+    transition: all 0.3s ease;
     text-align: left;
-  }
-  
-  .risk-case-study-content-p {
-    font-size: 16px;
-    font-weight: 300;
+    box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
+}
+
+.benefit-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #A91E22;
+    font-weight: bold;
+}
+
+.benefit-item p {
+    font-size: 1rem;
+    color: black;
     line-height: 1.6;
-    text-align: justify;
-  }
-  
-  .risk-case-study-button {
-    background-color: #a91e22;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 25px;
-    cursor: pointer;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tool-category {
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    text-align: left;
+    border: 4px solid #056774;
+    box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
+}
+
+.tool-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
+}
+
+.tool-category h4 {
+    font-size: 1.2rem;
+    color: #A91E22;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    gap: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    gap: 0.5rem;
+}
+
+.tool-category ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.tool-category li {
+    padding: 0.5rem 0;
+    color: black;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 1.2rem;
+    text-align: left;
+}
+
+.tool-category li::before {
+    content: "•";
+    color: black;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 3rem auto 1rem;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.cta-button {
+    padding: 0.75rem 1.5rem;
+    background: #A91E22;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
     text-decoration: none;
-  }
-  
-  .risk-case-study-button:hover {
-    background-color: #8b1a1e;
-    transform: scale(1.05);
-  }
-  
-  .risk-case-study-button::after {
-    content: "→";
-    font-size: 18px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1200px) {
-    .risk-card {
-      width: calc(50% - 30px);
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .risk-cards-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .risk-card {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .risk-same-heading {
-      font-size: 32px;
-    }
-  
-    .risk-hero {
-      padding: 60px 15px;
-    }
-  
-    .risk-hero-h1 {
-      font-size: 34px;
-    }
-  
-    .risk-hero-p {
-      font-size: 18px;
-    }
-  
-    .risk-hero-button {
-      padding: 10px 24px;
-      font-size: 16px;
-    }
-  
-    .risk-DigiDefense-section {
-      padding: 40px 15px;
-    }
-  
-    .risk-section-subtext {
-      font-size: 16px;
-    }
-  
-    .risk-card {
-      padding: 30px 15px;
-      width: 100%;
-    }
-  
-    .risk-card-text {
-      font-size: 16px;
-    }
-  
-    .risk-image-content {
-      flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    background: #8b1a1e;
+}
+
+@media (max-width: 1024px) {
+    .main-section {
+        padding: 2rem;
     }
     
-    .risk-image-section.alt .risk-image-content {
-      flex-direction: column-reverse;
+    .main-title {
+        font-size: 2.5rem;
     }
     
-    .risk-image-text, 
-    .risk-image-wrapper {
-      width: 100%;
+    .services-list {
+        grid-template-columns: 1fr;
     }
     
-    .risk-image-title {
-      font-size: 28px;
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-  
-    .risk-case-study-section {
-      border-radius: 60px 10px 60px 10px;
-      margin: 40px 15px;
-      width: auto;
-    }
-  
-    .risk-case-study-content-wrapper {
-      padding: 40px 20px;
-      flex-direction: column;
-    }
-  
-    .risk-case-study-content-h2 {
-      font-size: 24px;
-    }
-  
-    .risk-case-study-content-p {
-      font-size: 14px;
-      line-height: 1.8;
-    }
-  
-    .risk-case-study-button {
-      padding: 10px 20px;
-      font-size: 14px;
-      align-self: flex-start;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .risk-hero-h1 {
-      font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .main-section {
+        padding: 1.5rem;
     }
     
-    .risk-hero-p {
-      font-size: 16px;
+    .benefits-grid {
+        grid-template-columns: 1fr;
     }
     
-    .risk-hero-button {
-      font-size: 15px;
+    .tools-grid {
+        grid-template-columns: 1fr;
     }
-  }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .service-intro {
+        font-size: 1rem;
+    }
+    
+    .content-block h3 {
+        font-size: 1.5rem;
+    }
+    
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .service-content h4 {
+        text-align: center;
+    }
+}
