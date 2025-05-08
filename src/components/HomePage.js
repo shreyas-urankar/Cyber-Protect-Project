@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/HomePage.css";
 import Navbar from "../components/Navbar";
 import ScrollAnimation from "../components/ScrollAnimation";
+import { FaEnvelope, FaLinkedin, FaFacebook, FaChevronDown } from "react-icons/fa";
 
 const HomePage = () => {
   return (
@@ -25,15 +26,16 @@ const HomePage = () => {
         </div>
       </section>
 
+
       {/* About Section */}
       <section className="about">
         <h2>Who We Are</h2>
         <p>
           We’re a passionate team of cyber knights—experts from services,
-          industry, compliance, and academia—armed with cutting-edge solutions to
-          defend your organization’s data, processes, IT platforms, and brand. Our
-          mission is to keep your digital castle safe from dragons, trolls, and
-          mischievous imps.
+          industry, compliance, and academia—armed with cutting-edge solutions
+          to defend your organization’s data, processes, IT platforms, and
+          brand. Our mission is to keep your digital castle safe from dragons,
+          trolls, and mischievous imps.
         </p>
         <Link to="/aboutus" className="about-button">
           About Us
@@ -54,8 +56,8 @@ const HomePage = () => {
           <div className="service-card">
             <h3>Risk Assessments</h3>
             <p>
-              Like seasoned fortune tellers, we identify process gaps and help you
-              fortify them.
+              Like seasoned fortune tellers, we identify process gaps and help
+              you fortify them.
             </p>
           </div>
           <div className="service-card">
@@ -70,13 +72,11 @@ const HomePage = () => {
 
       {/* CTA Section */}
       <section className="cta">
-        <h2>Join Our Quest</h2>
-        <p>
-          Ready to embark on this epic adventure? Watch this space and follow us!
-        </p>
-        <Link to="/contact" className="cta-button">
-          Contact Us
-        </Link>
+        <h1>Join Our Quest ⚜️</h1>
+        <h4>
+          Ready to embark on this epic adventure ❔ Watch this space and follow
+          us ❕
+        </h4>
       </section>
     </div>
   );
