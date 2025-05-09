@@ -53,7 +53,8 @@
     display: flex;
     list-style: none;
     margin-left: auto;
-    gap: 11px; /* Even spacing */
+    gap: 15px; /* Even spacing */
+    margin-right: 40px;
 }
 
 .nav-links li {
