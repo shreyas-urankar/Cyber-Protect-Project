@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaFacebook, FaHome, FaServicestack, FaUser, FaBook, FaPhoneAlt, FaTeamspeak, FaHandshake } from "react-icons/fa";
+import { FaMagnifyingGlassChart } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
           </p>
           <div className="social-icons">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/cyber-protect-solutions"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -37,13 +38,6 @@ const Footer = () => {
             >
               <FaFacebook />
             </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter />
-            </a>
           </div>
         </div>
 
@@ -52,19 +46,19 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul className="footer-links">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/"> <FaHome /> Home</Link>
             </li>
             <li>
-              <Link to="/technologyconsultant">Services</Link>
+              <Link to="/technologyconsultant"> <FaServicestack/> Services</Link>
             </li>
             <li>
-              <Link to="/aboutus">About Us</Link>
+              <Link to="/aboutus"> <FaUser/> About Us</Link>
             </li>
             <li>
-              <Link to="/blog">Resources</Link>
+              <Link to="/blog"> <FaBook/> Resources</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact"> <FaPhoneAlt/> Contact</Link>
             </li>
           </ul>
         </div>
@@ -74,13 +68,13 @@ const Footer = () => {
           <h3>Our Services</h3>
           <ul className="footer-links">
             <li>
-              <Link to="/technologyconsultant">Technology Consultancy</Link>
+              <Link to="/technologyconsultant"> <FaTeamspeak/> Technology Consultancy</Link>
             </li>
             <li>
-              <Link to="/compliance_assessment">Compliance Assessment</Link>
+              <Link to="/compliance_assessment"> <FaHandshake/> Compliance Assessment</Link>
             </li>
             <li>
-              <Link to="/riskassessments">Risk Management</Link>
+              <Link to="/riskassessments"> <FaMagnifyingGlassChart/> Risk Management</Link>
             </li>
           </ul>
         </div>
@@ -88,8 +82,8 @@ const Footer = () => {
         {/* Contact Section */}
         <div className="footer-section">
           <Link to="/contact" className="contact-button">
-            Contact Us
-          </Link>
+          <FaPhoneAlt/> CONTACT US 
+          </Link> 
         </div>
 
         {/* Bottom Section */}

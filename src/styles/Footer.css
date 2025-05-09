@@ -48,6 +48,9 @@ footer {
 .footer-links {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer-links li {
@@ -105,7 +108,7 @@ footer {
     display: inline-block;
     margin-top: 15px;
     padding: 12px 25px;
-    background: #00aaff;
+    background:#056774;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -114,7 +117,7 @@ footer {
 }
 
 .contact-button:hover {
-    background: #0088cc;
+    background: #033c43;
     transform: translateY(-2px);
 }
 
@@ -159,4 +162,19 @@ footer {
         left: 50%;
         transform: translateX(-50%);
     }
+    .footer-links {
+        align-items: center;
+    }
+    .contact-button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Center Contact Us button in its section on desktop */
+.footer-section .contact-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
