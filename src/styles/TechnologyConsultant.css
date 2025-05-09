@@ -278,6 +278,10 @@ body {
     font-weight: bold;
 }
 
+.benefit-item h4 svg {
+    color: #056774;
+}
+
 .benefit-item p {
     font-size: 1rem;
     color: black;

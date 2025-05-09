@@ -8,7 +8,11 @@ import {
   FaRobot,
   FaCode,
   FaDatabase,
+  FaTeamspeak,
+  FaHandsHelping,
+  
 } from "react-icons/fa";
+import { FaArrowDownUpAcrossLine, FaMoneyBillTrendUp } from "react-icons/fa6";
 
 const TechnologyConsultant = () => {
   return (
@@ -229,7 +233,7 @@ const TechnologyConsultant = () => {
 
             <div className="benefits-grid">
               <div className="benefit-item">
-                <h4>Expertise</h4>
+                <h4> <FaTeamspeak/> Expertise</h4>
                 <p>
                   Our team consists of industry-certified professionals with
                   years of experience.
@@ -237,7 +241,7 @@ const TechnologyConsultant = () => {
               </div>
 
               <div className="benefit-item">
-                <h4>Tailored Solutions</h4>
+                <h4> <FaArrowDownUpAcrossLine/> Tailored Solutions</h4>
                 <p>
                   We analyze your requirements and develop customized technology
                   solutions.
@@ -245,14 +249,14 @@ const TechnologyConsultant = () => {
               </div>
 
               <div className="benefit-item">
-                <h4>Cost-Efficiency</h4>
+                <h4> <FaMoneyBillTrendUp/> Cost-Efficiency</h4>
                 <p>
                   Optimize your IT investments while reducing operational costs.
                 </p>
               </div>
 
               <div className="benefit-item">
-                <h4>End-to-End Support</h4>
+                <h4> <FaHandsHelping/> End-to-End Support</h4>
                 <p>
                   From consultation to implementation and ongoing support, we're
                   with you at every step.
