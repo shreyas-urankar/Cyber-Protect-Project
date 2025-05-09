@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaInstagram, FaFacebook, FaHome, FaServicestack, FaUser, FaBook, FaPhoneAlt, FaTeamspeak, FaHandshake } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaFacebook, FaHome, FaServicestack, FaUser, FaBook, FaPhoneAlt, FaTeamspeak, FaHandshake, FaExclamationTriangle } from "react-icons/fa";
 import { FaMagnifyingGlassChart } from "react-icons/fa6";
 
 const Footer = () => {
@@ -68,13 +68,13 @@ const Footer = () => {
           <h3>Our Services</h3>
           <ul className="footer-links">
             <li>
-              <Link to="/technologyconsultant"> <FaTeamspeak/> Technology Consultancy</Link>
+              <Link to="/technologyconsultant"> <FaHandshake/> Technology Consultancy</Link>
             </li>
             <li>
-              <Link to="/compliance_assessment"> <FaHandshake/> Compliance Assessment</Link>
+              <Link to="/compliance_assessment"> <FaMagnifyingGlassChart/> Compliance Assessment</Link>
             </li>
             <li>
-              <Link to="/riskassessments"> <FaMagnifyingGlassChart/> Risk Management</Link>
+              <Link to="/riskassessments"> <FaExclamationTriangle/> Risk Management</Link>
             </li>
           </ul>
         </div>
