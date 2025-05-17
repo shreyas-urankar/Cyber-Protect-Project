@@ -3,20 +3,18 @@ import "../styles/compliance_assessment.css";
 import {
   FaFileAlt,
   FaUserShield,
-  FaPlayCircle,
-  // FaServer,
-  // FaShieldAlt,
-  // FaCloudUploadAlt,
-  // FaRobot,
-  // FaCode,
-  // FaDatabase,
+  FaClipboardCheck,
+  FaShieldAlt,
+  FaLaptopCode,
+  FaHandshake,
+  FaBalanceScale,
+  FaRegChartBar,
+  FaSearchPlus,
+  FaUsers
 } from "react-icons/fa";
+import { FaScrewdriverWrench, FaArrowTrendUp } from "react-icons/fa6";
 
 const ComplianceAssessment = () => {
-  const handleComplianceClick = (type) => {
-    alert(`You selected: ${type}`);
-  };
-
   return (
     <div className="service-page-container">
       {/* Main Content */}
@@ -34,41 +32,58 @@ const ComplianceAssessment = () => {
           </div>
 
           <p className="service-intro">
-            Boost Your Compliance Success with Expert Guidance and Support
+            In today's regulatory environment, organizations face increasingly complex compliance requirements
+            across various standards and regulations. Our Compliance Assessment services help
+            businesses evaluate their data handling practices, security controls, and operational procedures
+            to ensure alignment with industry regulations and standards. We identify compliance gaps,
+            develop remediation strategies, and provide ongoing support to maintain compliance in an 
+            ever-changing regulatory landscape.
           </p>
 
-          {/* About Section */}
+          {/* Our Services Section */}
           <div className="content-block">
-            <h3>The Compliance Assessment Expert</h3>
+            <h3>Our Services</h3>
             <p>
-              DigiDefense excels in compliance assessments, continuously evaluating your data, platforms, and procedures to
-              meet industry and regulatory standards. Our experts conduct pre-assessment planning, gap analysis, and provide
-              actionable recommendations to address risks, ensuring compliance with regulations like GDPR, HIPAA, and PCI DSS.
-              With a tailored project plan, DigiDefense supports you throughout the compliance process, keeping you aligned
-              with best practices.
+              We offer comprehensive compliance assessment services tailored to your industry and specific
+              regulatory requirements. Our experts work closely with your team to evaluate your current
+              compliance posture and provide actionable recommendations.
             </p>
-          </div>
-
-          {/* Why Choose Us Section */}
-          <div className="content-block">
-            <h3>Why Choose DigiDefense for Your Compliance Assessments?</h3>
-            <p>
-              Compliance requirements can be complex and constantly evolving. DigiDefense simplifies the process with continuous
-              assessments of your data, platforms, and procedures, ensuring alignment with standards like PCI DSS and GDPR. We
-              assess your controls, identify gaps, and provide a clear path to compliance, helping you avoid penalties. With
-              tailored guidance and dedicated support, DigiDefense ensures your compliance journey is seamless and effective.
-            </p>
-            
             <div className="services-list">
               <div className="service-item">
                 <div className="service-icon">
-                  <FaFileAlt />
+                  <FaClipboardCheck />
                 </div>
                 <div className="service-content">
-                  <h4>Stay Informed on Compliance Requirements</h4>
+                  <h4>Gap Analysis</h4>
                   <p>
-                    We keep you updated on evolving industry standards and regulations, ensuring you're always aware of compliance
-                    requirements that impact your organization.
+                    Comprehensive evaluation of your current controls against compliance requirements,
+                    identifying areas that need improvement to achieve full compliance.
+                  </p>
+                </div>
+              </div>
+
+              <div className="service-item">
+                <div className="service-icon">
+                  <FaShieldAlt />
+                </div>
+                <div className="service-content">
+                  <h4>Risk Assessment</h4>
+                  <p>
+                    Identification and evaluation of compliance risks, their potential impact,
+                    and development of mitigation strategies to address them effectively.
+                  </p>
+                </div>
+              </div>
+
+              <div className="service-item">
+                <div className="service-icon">
+                  <FaScrewdriverWrench />
+                </div>
+                <div className="service-content">
+                  <h4>Remediation Planning</h4>
+                  <p>
+                    Development of detailed remediation roadmaps with prioritized action items
+                    to address compliance gaps efficiently and cost-effectively.
                   </p>
                 </div>
               </div>
@@ -78,131 +93,148 @@ const ComplianceAssessment = () => {
                   <FaUserShield />
                 </div>
                 <div className="service-content">
-                  <h4>Tailored Customer-Centric Support</h4>
+                  <h4>Compliance Training</h4>
                   <p>
-                    We prioritize your unique needs, delivering exceptional support to address your challenges and exceed your
-                    compliance expectations.
+                    Customized training programs to educate your team on compliance requirements,
+                    best practices, and their role in maintaining organizational compliance.
                   </p>
                 </div>
               </div>
 
               <div className="service-item">
                 <div className="service-icon">
-                  <FaPlayCircle />
+                  <FaSearchPlus />
                 </div>
                 <div className="service-content">
-                  <h4>Online Training for Compliance Awareness</h4>
+                  <h4>Compliance Monitoring</h4>
                   <p>
-                    We provide online training with up-to-date content on compliance topics, featuring current lessons and data
-                    breach statistics to educate your team.
+                    Implementation of ongoing monitoring processes to maintain compliance posture
+                    and quickly identify and address new compliance issues.
+                  </p>
+                </div>
+              </div>
+
+              <div className="service-item">
+                <div className="service-icon">
+                  <FaRegChartBar />
+                </div>
+                <div className="service-content">
+                  <h4>Compliance Reporting</h4>
+                  <p>
+                    Development of comprehensive compliance reports for internal stakeholders,
+                    regulatory bodies, and business partners, demonstrating your commitment to compliance.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Call to Action Section */}
+          {/* Compliance Types Section */}
           <div className="content-block">
-            <h3>Secure Your Future: Uncover Compliance Risks Now!</h3>
+            <h3>Types of Compliance Assessments</h3>
             <p>
-              Don't let compliance risks hold your organization back! Our expert assessments at DigiDefence identify
-              vulnerabilities, protect your reputation, and ensure you operate responsibly. Take the first step toward a
-              secure and compliant future with DigiDefence—start now and safeguard your success!
+              Our compliance assessment services cover various regulatory frameworks and industry standards.
+              We tailor our approach based on your specific industry and compliance requirements,
+              ensuring comprehensive coverage of all applicable regulations.
             </p>
-            <div className="cta-section">
-              <button className="cta-button">Get Started</button>
+
+            <div className="tools-grid">
+              <div className="tool-category">
+                <h4>
+                  <FaBalanceScale /> Industry Standards
+                </h4>
+                <ul>
+                  <li>PCI DSS - Payment Card Industry</li>
+                  <li>CMMC - Cybersecurity Maturity Model</li>
+                  <li>SOC 2 - Service Organization Control</li>
+                  <li>ISO 27001 - Information Security</li>
+                </ul>
+              </div>
+
+              <div className="tool-category">
+                <h4>
+                  <FaShieldAlt /> Regulatory Compliance
+                </h4>
+                <ul>
+                  <li>GDPR - General Data Protection</li>
+                  <li>HIPAA - Healthcare</li>
+                  <li>GLBA - Financial Services</li>
+                  <li>FERPA - Educational Institutions</li>
+                </ul>
+              </div>
+
+              <div className="tool-category">
+                <h4>
+                  <FaLaptopCode /> Financial Compliance
+                </h4>
+                <ul>
+                  <li>ACH - Automated Clearing House</li>
+                  <li>FACTA - Fair Credit Reporting</li>
+                  <li>LADMF - Limited Access Death Master File</li>
+                  <li>SOX - Sarbanes-Oxley Act</li>
+                </ul>
+              </div>
+
+              <div className="tool-category">
+                <h4>
+                  <FaUsers /> Privacy Regulations
+                </h4>
+                <ul>
+                  <li>CCPA - California Consumer Privacy</li>
+                  <li>CPRA - California Privacy Rights</li>
+                  <li>VCDPA - Virginia Consumer Data Protection</li>
+                  <li>CTDPA - Connecticut Data Privacy</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          {/* FAQ Section */}
+
+
+          {/* Why Choose Us? */}
           <div className="content-block">
-            <h3>Top Compliance Assessment FAQs</h3>
-            
-            <div className="faq-container">
-              <div className="faq-item">
-                <input type="checkbox" id="faq1" className="faq-toggle" />
-                <label htmlFor="faq1" className="faq-question">What is a compliance assessment?</label>
-                <div className="faq-answer">
-                  A compliance assessment is a process of evaluating whether an organization adheres to legal, regulatory, and
-                  industry standards. It helps identify gaps and ensures that the organization operates in accordance with
-                  applicable laws and ethical practices.
-                </div>
+            <h3>Why Choose Us ❓</h3>
+            <p>
+              Selecting the right compliance partner is crucial for your organization's success.
+              We differentiate ourselves through our expertise, methodology, and commitment to your compliance journey.
+            </p>
+
+            <div className="benefits-grid">
+              <div className="benefit-item">
+                <h4><FaUserShield /> Expert Knowledge</h4>
+                <p>
+                  Our team consists of certified compliance professionals with deep understanding of
+                  regulatory frameworks and industry standards.
+                </p>
               </div>
-              
-              <div className="faq-item">
-                <input type="checkbox" id="faq2" className="faq-toggle" />
-                <label htmlFor="faq2" className="faq-question">Why is a compliance assessment important?</label>
-                <div className="faq-answer">
-                  Compliance assessments are crucial for reducing legal and reputational risks. They ensure that organizations
-                  meet regulatory requirements, avoid penalties, and maintain trust with stakeholders by demonstrating a
-                  commitment to ethical practices.
-                </div>
+
+              <div className="benefit-item">
+                <h4><FaScrewdriverWrench /> Tailored Approach</h4>
+                <p>
+                  We customize our compliance assessment methodology to address your specific
+                  industry requirements and organizational needs.
+                </p>
               </div>
-              
-              <div className="faq-item">
-                <input type="checkbox" id="faq3" className="faq-toggle" />
-                <label htmlFor="faq3" className="faq-question">What are the types of compliance assessments?</label>
-                <div className="faq-answer">
-                  <div className="compliance-types">
-                    <button
-                      className="compliance-button"
-                      onClick={() => handleComplianceClick('PCI DSS')}
-                    >
-                      PCI DSS
-                    </button>
-                    <button
-                      className="compliance-button"
-                      onClick={() => handleComplianceClick('GLBA')}
-                    >
-                      GLBA
-                    </button>
-                    <button
-                      className="compliance-button"
-                      onClick={() => handleComplianceClick('CMMC')}
-                    >
-                      CMMC
-                    </button>
-                    <button
-                      className="compliance-button"
-                      onClick={() => handleComplianceClick('GDPR')}
-                    >
-                      GDPR
-                    </button>
-                    <button
-                      className="compliance-button"
-                      onClick={() => handleComplianceClick('HIPAA')}
-                    >
-                      HIPAA
-                    </button>
-                    <button
-                      className="compliance-button"
-                      onClick={() => handleComplianceClick('ACH')}
-                    >
-                      ACH
-                    </button>
-                    <button
-                      className="compliance-button"
-                      onClick={() => handleComplianceClick('FERPA')}
-                    >
-                      FERPA
-                    </button>
-                    <button
-                      className="compliance-button"
-                      onClick={() => handleComplianceClick('FACTA Red Flags')}
-                    >
-                      FACTA Red Flags
-                    </button>
-                    <button
-                      className="compliance-button"
-                      onClick={() => handleComplianceClick('LADMF')}
-                    >
-                      LADMF
-                    </button>
-                  </div>
-                </div>
+
+              <div className="benefit-item">
+                <h4><FaArrowTrendUp /> Continuous Improvement</h4>
+                <p>
+                  Our solutions focus on building a sustainable compliance program that evolves
+                  with changing regulations and business needs.
+                </p>
+              </div>
+
+              <div className="benefit-item">
+                <h4><FaHandshake /> Dedicated Support</h4>
+                <p>
+                  We provide ongoing guidance and support throughout your compliance journey,
+                  ensuring you maintain compliance over time.
+                </p>
               </div>
             </div>
           </div>
+
+
         </section>
       </main>
     </div>
