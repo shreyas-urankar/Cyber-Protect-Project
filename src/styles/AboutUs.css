@@ -159,8 +159,9 @@ body {
   padding: 1.5rem;
   background: none;
   border-radius: 8px;
-  border: 1px solid black;
+  border: 4px solid #056774;
   transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
 }
 
 .service-item:hover {
@@ -180,6 +181,10 @@ body {
   color: black;
   font-size: 1.5rem;
   flex-shrink: 0;
+}
+
+.service-icon svg{
+  color: #056774 !important;
 }
 
 .service-content h4 {
@@ -225,9 +230,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
   font-size: 1.5rem;
   flex-shrink: 0;
+}
+
+.advantage-icon svg {
+  color: #056774 !important;
 }
 
 .advantage-content h4 {
@@ -246,7 +254,10 @@ body {
   max-width: 800px;
   margin: 3rem auto;
   padding: 2rem;
-  background: none;
+  background-color: #f3f3f3 !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 8px;
   border-color: 4px solid #056774;
   position: relative;
@@ -423,58 +434,23 @@ cite {
   background-size: 50%;
 }
 
-.compliance-icon::after {
-  content: "📋";
-  font-size: 1.5rem;
-}
-
-.risk-icon::after {
-  content: "🛡️";
-  font-size: 1.5rem;
-}
-
-.tech-icon::after {
-  content: "💻";
-  font-size: 1.5rem;
-}
-
-.exp-icon::after {
-  content: "🏆";
-  font-size: 1.5rem;
-}
-
-.custom-icon::after {
-  content: "⚙️";
-  font-size: 1.5rem;
-}
-
-.support-icon::after {
-  content: "🕒";
-  font-size: 1.5rem;
-}
-
-/* Specific targeting for "Who We Are" section */
 .content-block:first-of-type h3,
 .content-block:first-of-type p {
   color: white !important;
 }
 
-/* Specific targeting for "What We Offer" section */
 .content-block:nth-of-type(2) h3 {
   color: #A91E22 !important;
 }
 
-/* Specific targeting for "Why Choose Us" section */
 .content-block:nth-of-type(3) h3 {
   color: #A91E22 !important;
 }
 
-/* Specific targeting for "Join Our Quest" section */
 .content-block:nth-of-type(4) h3 {
   color: #A91E22 !important;
 }
 
-/* Additional specific targeting for service content h4 */
 .services-list .service-content h4,
 .advantages .advantage-content h4 {
   color: #A91E22 !important;

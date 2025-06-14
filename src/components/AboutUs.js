@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/AboutUs.css";
+import { FaClock, FaFileAlt, FaLaptop, FaShieldAlt, FaTools, FaTrophy } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
@@ -34,7 +35,7 @@ const AboutUs = () => {
             <h3>What We Offer ❓</h3>
             <div className="services-list">
               <div className="service-item">
-                <div className="service-icon compliance-icon"></div>
+                <div className="service-icon compliance-icon"><FaFileAlt/></div>
                 <div className="service-content">
                   <h4>Compliance Assessments</h4>
                   <p>
@@ -46,7 +47,7 @@ const AboutUs = () => {
               </div>
 
               <div className="service-item">
-                <div className="service-icon risk-icon"></div>
+                <div className="service-icon risk-icon"><FaShieldAlt/></div>
                 <div className="service-content">
                   <h4>Risk Assessments</h4>
                   <p>
@@ -57,7 +58,7 @@ const AboutUs = () => {
               </div>
 
               <div className="service-item">
-                <div className="service-icon tech-icon"></div>
+                <div className="service-icon tech-icon"><FaLaptop/></div>
                 <div className="service-content">
                   <h4>Technology Consultancy</h4>
                   <p>
@@ -73,7 +74,7 @@ const AboutUs = () => {
             <h3>Why Choose Us ❓</h3>
             <div className="advantages">
               <div className="advantage-item">
-                <div className="advantage-icon exp-icon"></div>
+                <div className="advantage-icon exp-icon"><FaTrophy/></div>
                 <div className="advantage-content">
                   <h4>Experience</h4>
                   <p>Our experts have battled in countless cyber combats.</p>
@@ -81,7 +82,7 @@ const AboutUs = () => {
               </div>
 
               <div className="advantage-item">
-                <div className="advantage-icon custom-icon"></div>
+                <div className="advantage-icon custom-icon"><FaTools/></div>
                 <div className="advantage-content">
                   <h4>Tailored Solutions</h4>
                   <p>
@@ -92,7 +93,7 @@ const AboutUs = () => {
               </div>
 
               <div className="advantage-item">
-                <div className="advantage-icon support-icon"></div>
+                <div className="advantage-icon support-icon"><FaClock/></div>
                 <div className="advantage-content">
                   <h4>24/7 Vigilance</h4>
                   <p>Round-the-clock service to expedite outcomes.</p>
@@ -121,7 +122,7 @@ const AboutUs = () => {
             "Cybersecurity is not a product, but a process of innovation and
             resilience."
           </blockquote>
-          <cite>- Henry Solman, Co-Founder</cite>
+          <cite>- Henry Solman</cite>
         </div>
       </main>
     </div>
