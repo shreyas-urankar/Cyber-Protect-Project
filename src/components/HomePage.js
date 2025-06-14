@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "../styles/HomePage.css";
 import Navbar from "../components/Navbar";
 import ScrollAnimation from "../components/ScrollAnimation";
-import { FaEnvelope, FaLinkedin, FaFacebook, FaChevronDown } from "react-icons/fa";
 
 const HomePage = () => {
   return (
