@@ -10,9 +10,14 @@ import {
   FaDatabase,
   FaTeamspeak,
   FaHandsHelping,
-  
 } from "react-icons/fa";
 import { FaArrowDownUpAcrossLine, FaMoneyBillTrendUp } from "react-icons/fa6";
+import future_vision from "../assets/future-vision.jpeg";
+import digital_transformation from "../assets/digital-transformation.jpeg";
+import cloud_computing from "../assets/cloud-computing.jpeg";
+import cybersecurity_solutions from "../assets/cybersecurity-solutions.jpeg";
+import implementation_process from "../assets/implementation-process.jpeg";
+import technology_trends from "../assets/technology-trends.jpeg";
 
 const TechnologyConsultant = () => {
   return (
@@ -233,7 +238,10 @@ const TechnologyConsultant = () => {
 
             <div className="benefits-grid">
               <div className="benefit-item">
-                <h4> <FaTeamspeak/> Expertise</h4>
+                <h4>
+                  {" "}
+                  <FaTeamspeak /> Expertise
+                </h4>
                 <p>
                   Our team consists of industry-certified professionals with
                   years of experience.
@@ -241,7 +249,10 @@ const TechnologyConsultant = () => {
               </div>
 
               <div className="benefit-item">
-                <h4> <FaArrowDownUpAcrossLine/> Tailored Solutions</h4>
+                <h4>
+                  {" "}
+                  <FaArrowDownUpAcrossLine /> Tailored Solutions
+                </h4>
                 <p>
                   We analyze your requirements and develop customized technology
                   solutions.
@@ -249,18 +260,236 @@ const TechnologyConsultant = () => {
               </div>
 
               <div className="benefit-item">
-                <h4> <FaMoneyBillTrendUp/> Cost-Efficiency</h4>
+                <h4>
+                  {" "}
+                  <FaMoneyBillTrendUp /> Cost-Efficiency
+                </h4>
                 <p>
                   Optimize your IT investments while reducing operational costs.
                 </p>
               </div>
 
               <div className="benefit-item">
-                <h4> <FaHandsHelping/> End-to-End Support</h4>
+                <h4>
+                  {" "}
+                  <FaHandsHelping /> End-to-End Support
+                </h4>
                 <p>
                   From consultation to implementation and ongoing support, we're
                   with you at every step.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Technology Trends Section */}
+          <div className="content-block">
+            <h3>Emerging Technology Trends</h3>
+            <div className="trends-container">
+              <div className="trend-content">
+                <p>
+                  Stay ahead of the curve with our insights into the latest
+                  technology trends. We continuously monitor and analyze
+                  emerging technologies to help you make informed decisions for
+                  your business.
+                </p>
+                <div className="trend-list">
+                  <div className="trend-item">
+                    <h4>Artificial Intelligence & Machine Learning</h4>
+                    <p>
+                      Leverage AI/ML to automate processes, gain insights, and
+                      enhance decision-making.
+                    </p>
+                  </div>
+                  <div className="trend-item">
+                    <h4>Internet of Things (IoT)</h4>
+                    <p>
+                      Connect and manage devices to create smart, efficient
+                      systems.
+                    </p>
+                  </div>
+                  <div className="trend-item">
+                    <h4>Blockchain Technology</h4>
+                    <p>
+                      Implement secure, transparent, and decentralized
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="trend-image">
+                <img
+                  src={technology_trends}
+                  alt="Technology Trends Visualization"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Implementation Process Section */}
+          <div className="content-block">
+            <h3>Our Implementation Process</h3>
+            <div className="process-container">
+              <div className="process-image">
+                <img
+                  src={implementation_process}
+                  alt="Technology Implementation Process"
+                />
+              </div>
+              <div className="process-steps">
+                <div className="process-step">
+                  <div className="step-number">1</div>
+                  <div className="step-content">
+                    <h4>Assessment & Planning</h4>
+                    <p>
+                      We begin with a thorough analysis of your current systems
+                      and requirements.
+                    </p>
+                  </div>
+                </div>
+                <div className="process-step">
+                  <div className="step-number">2</div>
+                  <div className="step-content">
+                    <h4>Solution Design</h4>
+                    <p>
+                      Our experts design a customized solution tailored to your
+                      needs.
+                    </p>
+                  </div>
+                </div>
+                <div className="process-step">
+                  <div className="step-number">3</div>
+                  <div className="step-content">
+                    <h4>Implementation</h4>
+                    <p>
+                      We execute the solution with minimal disruption to your
+                      operations.
+                    </p>
+                  </div>
+                </div>
+                <div className="process-step">
+                  <div className="step-number">4</div>
+                  <div className="step-content">
+                    <h4>Training & Support</h4>
+                    <p>
+                      Comprehensive training and ongoing support ensure
+                      successful adoption.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Technology Solutions Showcase */}
+          <div className="content-block">
+            <h3>Technology Solutions Showcase</h3>
+            <div className="solutions-showcase">
+              <div className="solution-card">
+                <div className="solution-image">
+                  <img src={cloud_computing} alt="Cloud Computing Solutions" />
+                </div>
+                <div className="solution-content">
+                  <h4>Cloud Computing Solutions</h4>
+                  <p>
+                    Transform your business with scalable cloud infrastructure.
+                    Our solutions include hybrid cloud setups, cloud migration
+                    strategies, and cloud-native application development.
+                  </p>
+                  <ul className="solution-features">
+                    <li>Scalable Infrastructure</li>
+                    <li>Cost Optimization</li>
+                    <li>Enhanced Security</li>
+                    <li>24/7 Monitoring</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="solution-card">
+                <div className="solution-image">
+                  <img
+                    src={cybersecurity_solutions}
+                    alt="Cybersecurity Solutions"
+                  />
+                </div>
+                <div className="solution-content">
+                  <h4>Cybersecurity Solutions</h4>
+                  <p>
+                    Protect your digital assets with our comprehensive security
+                    solutions. From threat detection to compliance management,
+                    we ensure your business stays secure in the digital
+                    landscape.
+                  </p>
+                  <ul className="solution-features">
+                    <li>Threat Detection</li>
+                    <li>Compliance Management</li>
+                    <li>Data Protection</li>
+                    <li>Security Training</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="solution-card">
+                <div className="solution-image">
+                  <img
+                    src={digital_transformation}
+                    alt="Digital Transformation"
+                  />
+                </div>
+                <div className="solution-content">
+                  <h4>Digital Transformation</h4>
+                  <p>
+                    Accelerate your business growth with our digital
+                    transformation services. We help you modernize operations,
+                    implement automation, and leverage emerging technologies.
+                  </p>
+                  <ul className="solution-features">
+                    <li>Process Automation</li>
+                    <li>AI Integration</li>
+                    <li>Data Analytics</li>
+                    <li>IoT Solutions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Future Vision Section */}
+          <div className="content-block">
+            <h3>Our Vision for the Future</h3>
+            <div className="vision-container">
+              <div className="vision-content">
+                <p>
+                  We envision a future where technology seamlessly integrates
+                  with business operations, driving innovation and sustainable
+                  growth. Our commitment to staying at the forefront of
+                  technological advancements ensures that our clients are always
+                  prepared for what's next.
+                </p>
+                <div className="vision-points">
+                  <div className="vision-point">
+                    <h4>Innovation Leadership</h4>
+                    <p>
+                      Pioneering new solutions and approaches in technology
+                      consulting.
+                    </p>
+                  </div>
+                  <div className="vision-point">
+                    <h4>Sustainable Technology</h4>
+                    <p>
+                      Implementing eco-friendly and sustainable technology
+                      solutions.
+                    </p>
+                  </div>
+                  <div className="vision-point">
+                    <h4>Global Impact</h4>
+                    <p>
+                      Creating positive change through technology on a global
+                      scale.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="vision-image">
+                <img src={future_vision} alt="Future Technology Vision" />
               </div>
             </div>
           </div>
