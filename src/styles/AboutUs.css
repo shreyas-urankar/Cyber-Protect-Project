@@ -41,7 +41,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 32.5%;
+  height: 25%;
   background-color: #056774;
   z-index: 0;
 }
@@ -123,7 +123,7 @@ body {
 
 .content-block h3 {
   font-size: 1.8rem;
-  color: black;
+  color: #A91E22;
   margin-bottom: 1.5rem;
   position: relative;
   display: inline-block;
@@ -188,14 +188,14 @@ body {
 }
 
 .service-content h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
   color: #A91E22 !important;
   font-weight: bold;
 }
 
 .service-content p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: black;
   line-height: 1.6;
 }
@@ -239,17 +239,18 @@ body {
 }
 
 .advantage-content h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
   color: #A91E22;
   font-weight: bold;
 }
 
 .advantage-content p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: black;
   line-height: 1.6;
 }
+
 .quote-section {
   max-width: 800px;
   margin: 3rem auto;
@@ -454,4 +455,102 @@ cite {
 .services-list .service-content h4,
 .advantages .advantage-content h4 {
   color: #A91E22 !important;
+}
+
+/* Contact Info Section Styles */
+.contact-info-section {
+  margin: 2rem 0;
+}
+
+.contact-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-box {
+  flex: 1;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  border: 4px solid #056774;
+  box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px);
+}
+
+.contact-box h3 {
+  color: #A91E22;
+  margin-bottom: 1.5rem;
+}
+
+.contact-box p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Location Section Styles */
+.location-section {
+  margin: 2rem 0;
+}
+
+.location-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.company-image {
+  flex: 1;
+  max-width: 50%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
+}
+
+.company-image iframe {
+  width: 100%;
+  height: 300px;
+  border: 4px solid #056774;
+  border-radius: 8px;
+}
+
+.location-box {
+  flex: 1;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  border: 4px solid #056774;
+  box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
+}
+
+.location-box h3 {
+  color: #A91E22;
+  margin-bottom: 1.5rem;
+}
+
+.location-box p {
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-boxes {
+    flex-direction: column;
+  }
+  
+  .location-container {
+    flex-direction: column;
+  }
+  
+  .company-image {
+    max-width: 100%;
+  }
 }
