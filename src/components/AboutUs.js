@@ -1,6 +1,13 @@
 import React from "react";
 import "../styles/AboutUs.css";
-import { FaClock, FaFileAlt, FaLaptop, FaShieldAlt, FaTools, FaTrophy } from "react-icons/fa";
+import {
+  FaClock,
+  FaFileAlt,
+  FaLaptop,
+  FaShieldAlt,
+  FaTools,
+  FaTrophy,
+} from "react-icons/fa";
 
 const AboutUs = () => {
   return (
@@ -35,7 +42,9 @@ const AboutUs = () => {
             <h3>What We Offer ❓</h3>
             <div className="services-list">
               <div className="service-item">
-                <div className="service-icon compliance-icon"><FaFileAlt/></div>
+                <div className="service-icon compliance-icon">
+                  <FaFileAlt />
+                </div>
                 <div className="service-content">
                   <h4>Compliance Assessments</h4>
                   <p>
@@ -47,7 +56,9 @@ const AboutUs = () => {
               </div>
 
               <div className="service-item">
-                <div className="service-icon risk-icon"><FaShieldAlt/></div>
+                <div className="service-icon risk-icon">
+                  <FaShieldAlt />
+                </div>
                 <div className="service-content">
                   <h4>Risk Assessments</h4>
                   <p>
@@ -58,7 +69,9 @@ const AboutUs = () => {
               </div>
 
               <div className="service-item">
-                <div className="service-icon tech-icon"><FaLaptop/></div>
+                <div className="service-icon tech-icon">
+                  <FaLaptop />
+                </div>
                 <div className="service-content">
                   <h4>Technology Consultancy</h4>
                   <p>
@@ -74,7 +87,9 @@ const AboutUs = () => {
             <h3>Why Choose Us ❓</h3>
             <div className="advantages">
               <div className="advantage-item">
-                <div className="advantage-icon exp-icon"><FaTrophy/></div>
+                <div className="advantage-icon exp-icon">
+                  <FaTrophy />
+                </div>
                 <div className="advantage-content">
                   <h4>Experience</h4>
                   <p>Our experts have battled in countless cyber combats.</p>
@@ -82,7 +97,9 @@ const AboutUs = () => {
               </div>
 
               <div className="advantage-item">
-                <div className="advantage-icon custom-icon"><FaTools/></div>
+                <div className="advantage-icon custom-icon">
+                  <FaTools />
+                </div>
                 <div className="advantage-content">
                   <h4>Tailored Solutions</h4>
                   <p>
@@ -93,11 +110,54 @@ const AboutUs = () => {
               </div>
 
               <div className="advantage-item">
-                <div className="advantage-icon support-icon"><FaClock/></div>
+                <div className="advantage-icon support-icon">
+                  <FaClock />
+                </div>
                 <div className="advantage-content">
                   <h4>24/7 Vigilance</h4>
                   <p>Round-the-clock service to expedite outcomes.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="content-block contact-info-section">
+            <div className="contact-boxes">
+              <div className="contact-box">
+                <h3>Contact Information 📞</h3>
+                <p>Phone: +91 1234567890</p>
+                <p>Hours: Mon-Fri, 9:00 AM - 6:00 PM</p>
+                <p>Support: support@cyberprotect.com</p>
+              </div>
+              <div className="contact-box">
+                <h3>Email Us 📧</h3>
+                <p>General Inquiries: info@cyberprotect.com</p>
+                <p>Business: business@cyberprotect.com</p>
+                <p>Partnerships: partners@cyberprotect.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="content-block location-section">
+            <div className="location-container">
+              <div className="company-image">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1167.1802218020332!2d74.0192211146262!3d18.493461266263342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e92f693958b3%3A0xf8a2f3d54b65c584!2sMIT ADT School of Computing!5e1!3m2!1sen!2sin!4v1750058455226!5m2!1sen!2sin](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1167.1802218020332!2d74.0192211146262!3d18.493461266263342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e92f693958b3%3A0xf8a2f3d54b65c584!2sMIT%20ADT%20School%20of%20Computing!5e1!3m2!1sen!2sin!4v1750058455226!5m2!1sen!2sin"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="CyberProtect Solutions Location"
+                ></iframe>
+              </div>
+              <div className="location-box">
+                <h3>Our Location 📍</h3>
+                <p>CyberProtect Solutions</p>
+                <p>MIT ADT School of Computing</p>
+                <p>Solapur-Pune Highway, Loni Kalbhor</p>
+                <p>India, Maharashtra 412201</p>
               </div>
             </div>
           </div>
