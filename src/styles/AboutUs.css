@@ -41,7 +41,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 25%;
+  height: 24%;
   background-color: #056774;
   z-index: 0;
 }
@@ -457,7 +457,6 @@ cite {
   color: #A91E22 !important;
 }
 
-/* Contact Info Section Styles */
 .contact-info-section {
   margin: 2rem 0;
 }
@@ -493,7 +492,6 @@ cite {
   color: #333;
 }
 
-/* Location Section Styles */
 .location-section {
   margin: 2rem 0;
 }
@@ -540,7 +538,6 @@ cite {
   color: #333;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .contact-boxes {
     flex-direction: column;
