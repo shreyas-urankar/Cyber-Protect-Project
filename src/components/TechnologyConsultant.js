@@ -21,22 +21,22 @@ import technology_trends from "../assets/technology-trends.jpeg";
 
 const TechnologyConsultant = () => {
   return (
-    <div className="service-page-container">
+    <div className="technology-page-container">
       {/* Main Content */}
-      <main className="main-section">
+      <main className="tmain-section">
         {/* Header */}
-        <div className="header-section">
-          <h1 className="main-title">Technology Consultancy</h1>
-          <div className="header-line"></div>
+        <div className="theader-section">
+          <h1 className="tmain-title">Technology Consultancy</h1>
+          <div className="theader-line"></div>
         </div>
 
         {/* Service Overview */}
-        <section className="service-overview">
-          <div className="tech-icon-main">
+        <section className="tservice-overview">
+          <div className="t-tech-icon-main">
             <FaLaptopCode />
           </div>
 
-          <p className="service-intro">
+          <p className="tservice-intro">
             In today's fast-paced digital world, businesses need to stay ahead
             with the latest technologies to enhance efficiency, security, and
             growth. Our Technology Consultancy services help organizations
@@ -47,19 +47,19 @@ const TechnologyConsultant = () => {
           </p>
 
           {/* Our Services Section */}
-          <div className="content-block">
+          <div className="tcontent-block">
             <h3>Our Services</h3>
             <p>
               We offer a range of consultancy services to help businesses adopt
               the right technologies. Our experts work closely with you to
               understand your requirements and deliver customized solutions.
             </p>
-            <div className="services-list">
-              <div className="service-item">
-                <div className="service-icon">
+            <div className="tservices-list">
+              <div className="tservice-item">
+                <div className="tservice-icon">
                   <FaServer />
                 </div>
-                <div className="service-content">
+                <div className="tservice-content">
                   <h4>IT Infrastructure Consulting</h4>
                   <p>
                     Optimize your IT systems, migrate to the cloud, and enhance
@@ -68,11 +68,11 @@ const TechnologyConsultant = () => {
                 </div>
               </div>
 
-              <div className="service-item">
-                <div className="service-icon">
+              <div className="tservice-item">
+                <div className="tservice-icon">
                   <FaShieldAlt />
                 </div>
-                <div className="service-content">
+                <div className="tservice-content">
                   <h4>Cybersecurity Solutions</h4>
                   <p>
                     Protect your business from cyber threats with advanced
@@ -82,11 +82,11 @@ const TechnologyConsultant = () => {
                 </div>
               </div>
 
-              <div className="service-item">
-                <div className="service-icon">
+              <div className="tservice-item">
+                <div className="tservice-icon">
                   <FaRobot />
                 </div>
-                <div className="service-content">
+                <div className="tservice-content">
                   <h4>Digital Transformation</h4>
                   <p>
                     Implement AI, automation, and modern technology stacks to
@@ -95,11 +95,11 @@ const TechnologyConsultant = () => {
                 </div>
               </div>
 
-              <div className="service-item">
-                <div className="service-icon">
+              <div className="tservice-item">
+                <div className="tservice-icon">
                   <FaCode />
                 </div>
-                <div className="service-content">
+                <div className="tservice-content">
                   <h4>Custom Software & App Development</h4>
                   <p>
                     Build high-performance applications tailored to your
@@ -108,11 +108,11 @@ const TechnologyConsultant = () => {
                 </div>
               </div>
 
-              <div className="service-item">
-                <div className="service-icon">
+              <div className="tservice-item">
+                <div className="tservice-icon">
                   <FaDatabase />
                 </div>
-                <div className="service-content">
+                <div className="tservice-content">
                   <h4>Data Security & Compliance</h4>
                   <p>
                     Ensure your organization meets regulatory standards such as
@@ -122,11 +122,11 @@ const TechnologyConsultant = () => {
                 </div>
               </div>
 
-              <div className="service-item">
-                <div className="service-icon">
+              <div className="tservice-item">
+                <div className="tservice-icon">
                   <FaCloudUploadAlt />
                 </div>
-                <div className="service-content">
+                <div className="tservice-content">
                   <h4>Cloud Migration & Management</h4>
                   <p>
                     Seamlessly transition your infrastructure to cloud platforms
@@ -139,7 +139,7 @@ const TechnologyConsultant = () => {
           </div>
 
           {/* Industry Expertise */}
-          <div className="content-block">
+          <div className="tcontent-block">
             <h3>Industry Expertise</h3>
             <p>
               Our consultancy services are designed for businesses across
@@ -149,27 +149,27 @@ const TechnologyConsultant = () => {
               that align with your unique challenges and goals.
             </p>
 
-            <div className="industry-expertise">
-              <div className="industry-item">
+            <div className="tindustry-expertise">
+              <div className="tindustry-item">
                 <h4>Finance</h4>
               </div>
-              <div className="industry-item">
+              <div className="tindustry-item">
                 <h4>Healthcare</h4>
               </div>
-              <div className="industry-item">
+              <div className="tindustry-item">
                 <h4>Government</h4>
               </div>
-              <div className="industry-item">
+              <div className="tindustry-item">
                 <h4>E-commerce</h4>
               </div>
-              <div className="industry-item">
+              <div className="tindustry-item">
                 <h4>Information Technology</h4>
               </div>
             </div>
           </div>
 
           {/* Tools & Technologies */}
-          <div className="content-block">
+          <div className="tcontent-block">
             <h3>Tools & Technologies</h3>
             <p>
               We use industry-leading technologies to provide the best solutions
@@ -178,8 +178,8 @@ const TechnologyConsultant = () => {
               you have access to the best tools available.
             </p>
 
-            <div className="tools-grid">
-              <div className="tool-category">
+            <div className="t-tools-grid">
+              <div className="t-tool-category">
                 <h4>
                   <FaCloudUploadAlt /> Cloud
                 </h4>
@@ -190,7 +190,7 @@ const TechnologyConsultant = () => {
                 </ul>
               </div>
 
-              <div className="tool-category">
+              <div className="t-tool-category">
                 <h4>
                   <FaShieldAlt /> Security
                 </h4>
@@ -202,7 +202,7 @@ const TechnologyConsultant = () => {
                 </ul>
               </div>
 
-              <div className="tool-category">
+              <div className="t-tool-category">
                 <h4>
                   <FaCode /> Development
                 </h4>
@@ -214,7 +214,7 @@ const TechnologyConsultant = () => {
                 </ul>
               </div>
 
-              <div className="tool-category">
+              <div className="t-tool-category">
                 <h4>
                   <FaRobot /> Data & AI
                 </h4>
@@ -228,7 +228,7 @@ const TechnologyConsultant = () => {
           </div>
 
           {/* Why Choose Us? */}
-          <div className="content-block">
+          <div className="tcontent-block">
             <h3>Why Choose Us ❓</h3>
             <p>
               Choosing the right technology consultancy partner is crucial for
@@ -236,8 +236,8 @@ const TechnologyConsultant = () => {
               strategic, results-driven solutions tailored to your needs.
             </p>
 
-            <div className="benefits-grid">
-              <div className="benefit-item">
+            <div className="tbenefits-grid">
+              <div className="tbenefit-item">
                 <h4>
                   {" "}
                   <FaTeamspeak /> Expertise
@@ -248,7 +248,7 @@ const TechnologyConsultant = () => {
                 </p>
               </div>
 
-              <div className="benefit-item">
+              <div className="tbenefit-item">
                 <h4>
                   {" "}
                   <FaArrowDownUpAcrossLine /> Tailored Solutions
@@ -259,7 +259,7 @@ const TechnologyConsultant = () => {
                 </p>
               </div>
 
-              <div className="benefit-item">
+              <div className="tbenefit-item">
                 <h4>
                   {" "}
                   <FaMoneyBillTrendUp /> Cost-Efficiency
@@ -269,7 +269,7 @@ const TechnologyConsultant = () => {
                 </p>
               </div>
 
-              <div className="benefit-item">
+              <div className="tbenefit-item">
                 <h4>
                   {" "}
                   <FaHandsHelping /> End-to-End Support
@@ -283,32 +283,32 @@ const TechnologyConsultant = () => {
           </div>
 
           {/* Technology Trends Section */}
-          <div className="content-block">
+          <div className="tcontent-block">
             <h3>Emerging Technology Trends</h3>
-            <div className="trends-container">
-              <div className="trend-content">
+            <div className="t-trends-container">
+              <div className="t-trend-content">
                 <p>
                   Stay ahead of the curve with our insights into the latest
                   technology trends. We continuously monitor and analyze
                   emerging technologies to help you make informed decisions for
                   your business.
                 </p>
-                <div className="trend-list">
-                  <div className="trend-item">
+                <div className="t-trend-list">
+                  <div className="t-trend-item">
                     <h4>Artificial Intelligence & Machine Learning</h4>
                     <p>
                       Leverage AI/ML to automate processes, gain insights, and
                       enhance decision-making.
                     </p>
                   </div>
-                  <div className="trend-item">
+                  <div className="t-trend-item">
                     <h4>Internet of Things (IoT)</h4>
                     <p>
                       Connect and manage devices to create smart, efficient
                       systems.
                     </p>
                   </div>
-                  <div className="trend-item">
+                  <div className="t-trend-item">
                     <h4>Blockchain Technology</h4>
                     <p>
                       Implement secure, transparent, and decentralized
@@ -317,7 +317,7 @@ const TechnologyConsultant = () => {
                   </div>
                 </div>
               </div>
-              <div className="trend-image">
+              <div className="t-trend-image">
                 <img
                   src={technology_trends}
                   alt="Technology Trends Visualization"
@@ -327,19 +327,19 @@ const TechnologyConsultant = () => {
           </div>
 
           {/* Implementation Process Section */}
-          <div className="content-block">
+          <div className="tcontent-block">
             <h3>Our Implementation Process</h3>
-            <div className="process-container">
-              <div className="process-image">
+            <div className="tprocess-container">
+              <div className="tprocess-image">
                 <img
                   src={implementation_process}
                   alt="Technology Implementation Process"
                 />
               </div>
-              <div className="process-steps">
-                <div className="process-step">
-                  <div className="step-number">1</div>
-                  <div className="step-content">
+              <div className="tprocess-steps">
+                <div className="tprocess-step">
+                  <div className="tstep-number">1</div>
+                  <div className="tstep-content">
                     <h4>Assessment & Planning</h4>
                     <p>
                       We begin with a thorough analysis of your current systems
@@ -347,9 +347,9 @@ const TechnologyConsultant = () => {
                     </p>
                   </div>
                 </div>
-                <div className="process-step">
-                  <div className="step-number">2</div>
-                  <div className="step-content">
+                <div className="tprocess-step">
+                  <div className="tstep-number">2</div>
+                  <div className="tstep-content">
                     <h4>Solution Design</h4>
                     <p>
                       Our experts design a customized solution tailored to your
@@ -357,9 +357,9 @@ const TechnologyConsultant = () => {
                     </p>
                   </div>
                 </div>
-                <div className="process-step">
-                  <div className="step-number">3</div>
-                  <div className="step-content">
+                <div className="tprocess-step">
+                  <div className="tstep-number">3</div>
+                  <div className="tstep-content">
                     <h4>Implementation</h4>
                     <p>
                       We execute the solution with minimal disruption to your
@@ -367,9 +367,9 @@ const TechnologyConsultant = () => {
                     </p>
                   </div>
                 </div>
-                <div className="process-step">
-                  <div className="step-number">4</div>
-                  <div className="step-content">
+                <div className="tprocess-step">
+                  <div className="tstep-number">4</div>
+                  <div className="tstep-content">
                     <h4>Training & Support</h4>
                     <p>
                       Comprehensive training and ongoing support ensure
@@ -382,21 +382,21 @@ const TechnologyConsultant = () => {
           </div>
 
           {/* Technology Solutions Showcase */}
-          <div className="content-block">
+          <div className="tcontent-block">
             <h3>Technology Solutions Showcase</h3>
-            <div className="solutions-showcase">
-              <div className="solution-card">
-                <div className="solution-image">
+            <div className="tsolutions-showcase">
+              <div className="tsolution-card">
+                <div className="tsolution-image">
                   <img src={cloud_computing} alt="Cloud Computing Solutions" />
                 </div>
-                <div className="solution-content">
+                <div className="tsolution-content">
                   <h4>Cloud Computing Solutions</h4>
                   <p>
                     Transform your business with scalable cloud infrastructure.
                     Our solutions include hybrid cloud setups, cloud migration
                     strategies, and cloud-native application development.
                   </p>
-                  <ul className="solution-features">
+                  <ul className="tsolution-features">
                     <li>Scalable Infrastructure</li>
                     <li>Cost Optimization</li>
                     <li>Enhanced Security</li>
@@ -404,14 +404,14 @@ const TechnologyConsultant = () => {
                   </ul>
                 </div>
               </div>
-              <div className="solution-card">
-                <div className="solution-image">
+              <div className="tsolution-card">
+                <div className="tsolution-image">
                   <img
                     src={cybersecurity_solutions}
                     alt="Cybersecurity Solutions"
                   />
                 </div>
-                <div className="solution-content">
+                <div className="tsolution-content">
                   <h4>Cybersecurity Solutions</h4>
                   <p>
                     Protect your digital assets with our comprehensive security
@@ -419,7 +419,7 @@ const TechnologyConsultant = () => {
                     we ensure your business stays secure in the digital
                     landscape.
                   </p>
-                  <ul className="solution-features">
+                  <ul className="tsolution-features">
                     <li>Threat Detection</li>
                     <li>Compliance Management</li>
                     <li>Data Protection</li>
@@ -427,21 +427,21 @@ const TechnologyConsultant = () => {
                   </ul>
                 </div>
               </div>
-              <div className="solution-card">
-                <div className="solution-image">
+              <div className="tsolution-card">
+                <div className="tsolution-image">
                   <img
                     src={digital_transformation}
                     alt="Digital Transformation"
                   />
                 </div>
-                <div className="solution-content">
+                <div className="tsolution-content">
                   <h4>Digital Transformation</h4>
                   <p>
                     Accelerate your business growth with our digital
                     transformation services. We help you modernize operations,
                     implement automation, and leverage emerging technologies.
                   </p>
-                  <ul className="solution-features">
+                  <ul className="tsolution-features">
                     <li>Process Automation</li>
                     <li>AI Integration</li>
                     <li>Data Analytics</li>
@@ -453,10 +453,10 @@ const TechnologyConsultant = () => {
           </div>
 
           {/* Future Vision Section */}
-          <div className="content-block">
+          <div className="tcontent-block">
             <h3>Our Vision for the Future</h3>
-            <div className="vision-container">
-              <div className="vision-content">
+            <div className="tvision-container">
+              <div className="tvision-content">
                 <p>
                   We envision a future where technology seamlessly integrates
                   with business operations, driving innovation and sustainable
@@ -464,22 +464,22 @@ const TechnologyConsultant = () => {
                   technological advancements ensures that our clients are always
                   prepared for what's next.
                 </p>
-                <div className="vision-points">
-                  <div className="vision-point">
+                <div className="tvision-points">
+                  <div className="tvision-point">
                     <h4>Innovation Leadership</h4>
                     <p>
                       Pioneering new solutions and approaches in technology
                       consulting.
                     </p>
                   </div>
-                  <div className="vision-point">
+                  <div className="tvision-point">
                     <h4>Sustainable Technology</h4>
                     <p>
                       Implementing eco-friendly and sustainable technology
                       solutions.
                     </p>
                   </div>
-                  <div className="vision-point">
+                  <div className="tvision-point">
                     <h4>Global Impact</h4>
                     <p>
                       Creating positive change through technology on a global
@@ -488,7 +488,7 @@ const TechnologyConsultant = () => {
                   </div>
                 </div>
               </div>
-              <div className="vision-image">
+              <div className="tvision-image">
                 <img src={future_vision} alt="Future Technology Vision" />
               </div>
             </div>
