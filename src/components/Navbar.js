@@ -55,6 +55,21 @@ const Navbar = () => {
               <li>
                 <Link to="/risk-management">Risk Management</Link>
               </li>
+              <li>
+                <Link to="">DevSecOps Consultancy</Link>
+              </li>
+              <li>
+                <Link to="">Cloud Security</Link>
+              </li>
+              <li>
+                <Link to="">AI/ML Security</Link>
+              </li>
+              <li>
+                <Link to="">IOT Security</Link>
+              </li>
+              <li>
+                <Link to="">Mobile and Web Development Security</Link>
+              </li>
             </ul>
           )}
         </li>
