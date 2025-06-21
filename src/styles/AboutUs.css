@@ -23,7 +23,7 @@ body {
   color: black;
 }
 
-.about-us-container {
+.a-about-us-container {
   min-height: 100vh;
   background: none;
   position: relative;
@@ -31,11 +31,11 @@ body {
   flex-direction: column;
 }
 
-.about-us-container::after {
+.a-about-us-container::after {
   content: none;
 }
 
-.about-us-container::before {
+.a-about-us-container::before {
   content: '';
   position: absolute;
   top: 0;
@@ -46,17 +46,7 @@ body {
   z-index: 0;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 3rem;
-  width: 100%;
-  position: relative;
-  z-index: 10;
-}
-
-.main-section {
+.amain-section {
   flex: 1;
   padding: 2rem 4rem 3rem;
   position: relative;
@@ -67,7 +57,7 @@ body {
   z-index: 10;
 }
 
-.header-section {
+.aheader-section {
   margin-bottom: 3rem;
   text-align: center;
   width: 100%;
@@ -75,15 +65,15 @@ body {
   color: white;
 }
 
-.header-section .main-title {
+.aheader-section .amain-title {
   color: white !important;
 }
 
-.header-section .header-line {
+.aheader-section .aheader-line {
   background-color: white !important;
 }
 
-.main-title {
+.amain-title {
   font-size: 3rem;
   font-weight: 700;
   color: white;
@@ -94,20 +84,20 @@ body {
   display: inline-block;
 }
 
-.header-line {
+.aheader-line {
   height: 3px;
   width: 150px;
   background: white;
   margin: 0 auto;
 }
 
-.about-overview {
+.a-about-overview {
   max-width: 1000px;
   margin: 0 auto;
   width: 100%;
 }
 
-.about-overview h2 {
+.a-about-overview h2 {
   font-size: 2.5rem;
   color: white;
   margin-bottom: 2rem;
@@ -117,11 +107,11 @@ body {
   display: inline-block;
 }
 
-.content-block {
+.acontent-block {
   margin-bottom: 3rem;
 }
 
-.content-block h3 {
+.acontent-block h3 {
   font-size: 1.8rem;
   color: #A91E22;
   margin-bottom: 1.5rem;
@@ -129,7 +119,7 @@ body {
   display: inline-block;
 }
 
-.content-block h3::after {
+.acontent-block h3::after {
   content: '';
   position: absolute;
   bottom: -8px;
@@ -139,21 +129,21 @@ body {
   background: none;
 }
 
-.content-block p {
+.acontent-block p {
   font-size: 1.1rem;
   line-height: 1.7;
   color: black;
   margin-bottom: 1.2rem;
 }
 
-.services-list {
+.aservices-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.service-item {
+.aservice-item {
   display: flex;
   gap: 1rem;
   padding: 1.5rem;
@@ -164,13 +154,13 @@ body {
   box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
 }
 
-.service-item:hover {
+.aservice-item:hover {
   background: none;
   transform: translateY(-5px);
   box-shadow: none;
 }
 
-.service-icon {
+.aservice-icon {
   width: 50px;
   height: 50px;
   background-color: none;
@@ -183,31 +173,31 @@ body {
   flex-shrink: 0;
 }
 
-.service-icon svg{
+.aservice-icon svg{
   color: #056774 !important;
 }
 
-.service-content h4 {
+.aservice-content h4 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
   color: #A91E22 !important;
   font-weight: bold;
 }
 
-.service-content p {
+.aservice-content p {
   font-size: 1.1rem;
   color: black;
   line-height: 1.6;
 }
 
-.advantages {
+.a-advantages {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.advantage-item {
+.a-advantage-item {
   display: flex;
   gap: 1rem;
   padding: 1.5rem;
@@ -217,12 +207,12 @@ body {
   box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
 }
 
-.advantage-item:hover {
+.a-advantage-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
 }
 
-.advantage-icon {
+.a-advantage-icon {
   width: 50px;
   height: 50px;
   background-color: none;
@@ -234,24 +224,24 @@ body {
   flex-shrink: 0;
 }
 
-.advantage-icon svg {
+.a-advantage-icon svg {
   color: #056774 !important;
 }
 
-.advantage-content h4 {
+.a-advantage-content h4 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
   color: #A91E22;
   font-weight: bold;
 }
 
-.advantage-content p {
+.a-advantage-content p {
   font-size: 1.1rem;
   color: black;
   line-height: 1.6;
 }
 
-.quote-section {
+.aquote-section {
   max-width: 800px;
   margin: 3rem auto;
   padding: 2rem;
@@ -267,12 +257,12 @@ body {
   transition: all 0.3s ease;
 }
 
-.quote-section:hover {
+.aquote-section:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
 }
 
-.quote-section::before {
+.aquote-section::before {
   content: '"';
   position: absolute;
   top: -30px;
@@ -348,16 +338,16 @@ cite {
 }
 
 @media (max-width: 1024px) {
-  .main-section {
+  .tamain-section {
     padding: 2rem;
   }
   
-  .main-title {
+  .amain-title {
     font-size: 2.5rem;
   }
   
-  .services-list, 
-  .advantages {
+  .aservices-list, 
+  .a-advantages {
     grid-template-columns: 1fr;
   }
 }
@@ -374,7 +364,7 @@ cite {
     gap: 0.5rem;
   }
   
-  .main-section {
+  .tamain-section {
     padding: 1.5rem;
   }
   
@@ -399,27 +389,27 @@ cite {
     height: 40px;
   }
   
-  .main-title {
+  .amain-title {
     font-size: 2rem;
   }
   
-  .about-overview h2 {
+  .a-about-overview h2 {
     font-size: 2rem;
   }
   
-  .content-block h3 {
+  .acontent-block h3 {
     font-size: 1.5rem;
   }
   
-  .service-item,
-  .advantage-item {
+  .aservice-item,
+  .a-advantage-item {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
   
-  .service-content h4,
-  .advantage-content h4 {
+  .aservice-content h4,
+  .a-advantage-content h4 {
     text-align: center;
   }
 }
@@ -435,25 +425,25 @@ cite {
   background-size: 50%;
 }
 
-.content-block:first-of-type h3,
-.content-block:first-of-type p {
+.acontent-block:first-of-type h3,
+.acontent-block:first-of-type p {
   color: white !important;
 }
 
-.content-block:nth-of-type(2) h3 {
+.acontent-block:nth-of-type(2) h3 {
   color: #A91E22 !important;
 }
 
-.content-block:nth-of-type(3) h3 {
+.acontent-block:nth-of-type(3) h3 {
   color: #A91E22 !important;
 }
 
-.content-block:nth-of-type(4) h3 {
+.acontent-block:nth-of-type(4) h3 {
   color: #A91E22 !important;
 }
 
-.services-list .service-content h4,
-.advantages .advantage-content h4 {
+.aservices-list .aservice-content h4,
+.a-advantages .a-advantage-content h4 {
   color: #A91E22 !important;
 }
 
@@ -461,14 +451,14 @@ cite {
   margin: 2rem 0;
 }
 
-.contact-boxes {
+.acontact-boxes {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   margin-top: 1.5rem;
 }
 
-.contact-box {
+.acontact-box {
   flex: 1;
   padding: 2rem;
   background: white;
@@ -478,16 +468,16 @@ cite {
   transition: transform 0.3s ease;
 }
 
-.contact-box:hover {
+.acontact-box:hover {
   transform: translateY(-5px);
 }
 
-.contact-box h3 {
+.acontact-box h3 {
   color: #A91E22;
   margin-bottom: 1.5rem;
 }
 
-.contact-box p {
+.acontact-box p {
   margin-bottom: 1rem;
   color: #333;
 }
@@ -496,7 +486,7 @@ cite {
   margin: 2rem 0;
 }
 
-.location-container {
+.alocation-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -504,7 +494,7 @@ cite {
   margin-top: 1.5rem;
 }
 
-.company-image {
+.acompany-image {
   flex: 1;
   max-width: 50%;
   border-radius: 8px;
@@ -512,14 +502,14 @@ cite {
   box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
 }
 
-.company-image iframe {
+.acompany-image iframe {
   width: 100%;
   height: 300px;
   border: 4px solid #056774;
   border-radius: 8px;
 }
 
-.location-box {
+.alocation-box {
   flex: 1;
   padding: 2rem;
   background: white;
@@ -528,26 +518,26 @@ cite {
   box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
 }
 
-.location-box h3 {
+.alocation-box h3 {
   color: #A91E22;
   margin-bottom: 1.5rem;
 }
 
-.location-box p {
+.alocation-box p {
   margin-bottom: 0.8rem;
   color: #333;
 }
 
 @media (max-width: 768px) {
-  .contact-boxes {
+  .acontact-boxes {
     flex-direction: column;
   }
   
-  .location-container {
+  .alocation-container {
     flex-direction: column;
   }
   
-  .company-image {
+  .acompany-image {
     max-width: 100%;
   }
 }
