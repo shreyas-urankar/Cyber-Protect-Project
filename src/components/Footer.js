@@ -1,7 +1,23 @@
 import React from "react";
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaInstagram, FaFacebook, FaHome, FaServicestack, FaUser, FaBook, FaPhoneAlt, FaHandshake, FaExclamationTriangle } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaInstagram,
+  FaFacebook,
+  FaHome,
+  FaServicestack,
+  FaUser,
+  FaBook,
+  FaPhoneAlt,
+  FaHandshake,
+  FaExclamationTriangle,
+  FaDev,
+  FaCloudUploadAlt,
+  FaRobot,
+  FaThinkPeaks,
+  FaMobileAlt
+} from "react-icons/fa";
 import { FaMagnifyingGlassChart } from "react-icons/fa6";
 
 const Footer = () => {
@@ -46,19 +62,34 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul className="footer-links">
             <li>
-              <Link to="/"> <FaHome /> Home</Link>
+              <Link to="/">
+                {" "}
+                <FaHome /> Home
+              </Link>
             </li>
             <li>
-              <Link to="/technologyconsultant"> <FaServicestack/> Services</Link>
+              <Link to="/technologyconsultant">
+                {" "}
+                <FaServicestack /> Services
+              </Link>
             </li>
             <li>
-              <Link to="/aboutus"> <FaUser/> About Us</Link>
+              <Link to="/aboutus">
+                {" "}
+                <FaUser /> About Us
+              </Link>
             </li>
             <li>
-              <Link to="/blog"> <FaBook/> Resources</Link>
+              <Link to="/blog">
+                {" "}
+                <FaBook /> Resources
+              </Link>
             </li>
             <li>
-              <Link to="/contact"> <FaPhoneAlt/> Contact</Link>
+              <Link to="/contact">
+                {" "}
+                <FaPhoneAlt /> Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -68,13 +99,37 @@ const Footer = () => {
           <h3>Our Services</h3>
           <ul className="footer-links">
             <li>
-              <Link to="/technologyconsultant"> <FaHandshake/> Technology Consultancy</Link>
+              <Link to="/technologyconsultant">
+                {" "}
+                <FaHandshake /> Technology Consultancy
+              </Link>
             </li>
             <li>
-              <Link to="/compliance_assessment"> <FaMagnifyingGlassChart/> Compliance Assessment</Link>
+              <Link to="/compliance_assessment">
+                {" "}
+                <FaMagnifyingGlassChart /> Compliance Assessment
+              </Link>
             </li>
             <li>
-              <Link to="/riskassessments"> <FaExclamationTriangle/> Risk Management</Link>
+              <Link to="/risk-management">
+                {" "}
+                <FaExclamationTriangle /> Risk Management
+              </Link>
+            </li>
+            <li>
+              <Link to=""> <FaDev/> DevSecOps Consultancy</Link>
+            </li>
+            <li>
+              <Link to=""> <FaCloudUploadAlt/> Cloud Security</Link>
+            </li>
+            <li>
+              <Link to=""> <FaRobot/> AI/ML Security</Link>
+            </li>
+            <li>
+              <Link to=""> <FaThinkPeaks/> IOT Security</Link>
+            </li>
+            <li>
+              <Link to=""> <FaMobileAlt/> Mobile and Web Development Security</Link>
             </li>
           </ul>
         </div>
@@ -82,8 +137,8 @@ const Footer = () => {
         {/* Contact Section */}
         <div className="footer-section">
           <Link to="/contact" className="contact-button">
-          <FaPhoneAlt/> CONTACT US 
-          </Link> 
+            <FaPhoneAlt /> CONTACT US
+          </Link>
         </div>
 
         {/* Bottom Section */}
