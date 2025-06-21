@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"; 
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
 import RiskAssessments from "./components/RiskAssessments";
@@ -14,17 +14,20 @@ import ComplianceAssessment from "./components/compliance_assessment";
 const App = () => {
   return (
     <Router>
-      <Navbar /> 
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/risk-management" element={<RiskAssessments />} />
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/advisory" element={<Advisory />} />
-        <Route path="/getstarted" element={<GetStarted />} /> 
-        <Route path="/technologyconsultant" element={<TecnologyConsultant />} /> 
-        <Route path="/aboutus" element={<AboutUs />} /> 
+        <Route path="/getstarted" element={<GetStarted />} />
+        <Route path="/technologyconsultant" element={<TecnologyConsultant />} />
+        <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/compliance_assessment" element={<ComplianceAssessment />} /> 
+        <Route
+          path="/compliance_assessment"
+          element={<ComplianceAssessment />}
+        />
       </Routes>
       <Footer />
     </Router>
