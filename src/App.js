@@ -11,6 +11,7 @@ import AboutUs from "./components/AboutUs";
 import TecnologyConsultant from "./components/TechnologyConsultant";
 import Blog from "./components/Blog";
 import ComplianceAssessment from "./components/compliance_assessment";
+import AIML from "./components/AIML";
 const App = () => {
   return (
     <Router>
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/technologyconsultant" element={<TecnologyConsultant />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/aiml" element={<AIML/>} />
         <Route
           path="/compliance_assessment"
           element={<ComplianceAssessment />}

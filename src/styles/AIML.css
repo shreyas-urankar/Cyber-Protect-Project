@@ -1,0 +1,106 @@
+/* AIMLSecurityAudit.css - Based on RiskAssessments.css with AI/ML enhancements */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-blue: #056774;
+  --primary-purple: #6a4c93; /* New AI-themed color */
+  --primary-red: #A91E22;
+  --white: #ffffff;
+  --light-gray: #f8f9fa;
+  --dark-text: #333333;
+}
+
+/* AI-specific icon animation */
+@keyframes ai-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* Override some risk assessment styles for AI page */
+.rservice-page-container::before {
+  height: 400px; /* Slightly taller header for AI page */
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-purple) 100%);
+}
+
+.r-tech-icon-main {
+  animation: ai-pulse 2.5s ease-in-out infinite;
+}
+
+/* AI-specific service items */
+.rservice-item {
+  border-color: var(--primary-purple);
+}
+
+.rservice-item:hover {
+  box-shadow: 0 12px 20px rgba(106, 76, 147, 0.3);
+}
+
+/* AI process steps */
+.rstep-number {
+  background-color: var(--primary-purple);
+}
+
+.rstep-content h4 {
+  color: var(--primary-purple);
+}
+
+/* AI tools grid enhancements */
+.rtool-category {
+  border-color: var(--primary-purple);
+}
+
+.rtool-category:hover {
+  box-shadow: 0 12px 20px rgba(106, 76, 147, 0.2);
+}
+
+/* AI solution cards */
+.rsolution-card {
+  border-color: var(--primary-purple);
+}
+
+.rsolution-card:hover {
+  box-shadow: 0 12px 24px rgba(106, 76, 147, 0.3);
+}
+
+/* AI CTA button */
+.rcta-button {
+  background: var(--primary-purple);
+  box-shadow: 0 4px 8px rgba(106, 76, 147, 0.3);
+}
+
+.rcta-button:hover {
+  background: #5a3f7d;
+  box-shadow: 0 6px 12px rgba(106, 76, 147, 0.4);
+}
+
+/* Responsive adjustments for AI content */
+@media (max-width: 768px) {
+  .rservice-page-container::before {
+    height: 450px; /* More space for AI intro content */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .rservice-page-container::before {
+    height: 400px;
+  }
+  .rontent-block{
+    padding-top: 10px;
+}
+  /* Adjust AI process steps for mobile */
+  .rprocess-step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .rstep-number {
+    margin-bottom: 0.5rem;
+  }
+}
