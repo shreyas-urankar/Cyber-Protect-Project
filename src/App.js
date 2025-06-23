@@ -12,10 +12,17 @@ import TecnologyConsultant from "./components/TechnologyConsultant";
 import Blog from "./components/Blog";
 import ComplianceAssessment from "./components/compliance_assessment";
 import AIML from "./components/AIML";
+
 import ContactPage from "./components/Contact";
+
+import CloudSecurity from "./components/CloudSecurity";
+import MobileWebSecurity from "./components/MobileWebSecurity";
+import ScrollToTop from "./components/ScrollToTop";
+
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -32,6 +39,8 @@ const App = () => {
           path="/compliance_assessment"
           element={<ComplianceAssessment />}
         />
+        <Route path="/cloudsecurity" element={<CloudSecurity />} />
+        <Route path="/mobilewebsecurity" element={<MobileWebSecurity />} />
       </Routes>
       <Footer />
     </Router>

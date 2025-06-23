@@ -334,6 +334,7 @@ const TechnologyConsultant = () => {
                 <img
                   src={implementation_process}
                   alt="Technology Implementation Process"
+                  style={{ width: "220px", height: "auto" }}
                 />
               </div>
               <div className="tprocess-steps">
