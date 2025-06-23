@@ -120,16 +120,16 @@ const Footer = () => {
               <Link to=""> <FaDev/> DevSecOps Consultancy</Link>
             </li>
             <li>
-              <Link to=""> <FaCloudUploadAlt/> Cloud Security</Link>
+              <Link to="/cloudsecurity"> <FaCloudUploadAlt/> Cloud Security</Link>
             </li>
             <li>
-              <Link to=""> <FaRobot/> AI/ML Security</Link>
+              <Link to="/aiml"> <FaRobot/> AI/ML Security</Link>
             </li>
             <li>
               <Link to=""> <FaThinkPeaks/> IOT Security</Link>
             </li>
             <li>
-              <Link to=""> <FaMobileAlt/> Mobile and Web Development Security</Link>
+              <Link to="/mobilewebsecurity"> <FaMobileAlt/> Mobile and Web Development Security</Link>
             </li>
           </ul>
         </div>
