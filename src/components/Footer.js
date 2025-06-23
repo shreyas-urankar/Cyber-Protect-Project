@@ -124,18 +124,14 @@ const Footer = () => {
             </li>
             <li>
 
-              <Link to="/cloud-security" onClick={handleNavigation('/cloud-security')}>
+              <Link to="/cloud-security" onClick={handleNavigation('/cloudsecurity')}>
                 <FaCloudUploadAlt /> Cloud Security
               </Link>
             </li>
             <li>
-              <Link to="/ai-ml-security" onClick={handleNavigation('/ai-ml-security')}>
+              <Link to="/aiml" onClick={handleNavigation('/AIML')}>
                 <FaRobot /> AI/ML Security
               </Link>
-              <Link to="/cloudsecurity"> <FaCloudUploadAlt /> Cloud Security</Link>
-            </li>
-            <li>
-              <Link to="/aiml"> <FaRobot /> AI/ML Security</Link>
             </li>
             <li>
               <Link to="/iot-security" onClick={handleNavigation('/iot-security')}>
@@ -146,8 +142,6 @@ const Footer = () => {
               <Link to="/mobile-web-security" onClick={handleNavigation('/mobile-web-security')}>
                 <FaMobileAlt /> Mobile and Web Development Security
               </Link>
-
-              <Link to="/mobilewebsecurity"> <FaMobileAlt /> Mobile and Web Development Security</Link>
             </li>
           </ul>
         </div>
