@@ -103,19 +103,7 @@ const Navbar = () => {
           onMouseEnter={() => setDropdown("contact")}
           onMouseLeave={() => setDropdown(null)}
         >
-          <Link to="#">
-            Contact <FaChevronDown className="dropdown-icon" />
-          </Link>
-          {dropdown === "contact" && (
-            <ul className="dropdown-menu">
-              <li>
-                <Link to="/support">Support</Link>
-              </li>
-              <li>
-                <Link to="/inquiries">General Inquiries</Link>
-              </li>
-            </ul>
-          )}
+          <Link to="/Contact">Contact</Link>
         </li>
       </ul>
 

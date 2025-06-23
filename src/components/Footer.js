@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import {
   FaLinkedin,
@@ -21,6 +22,14 @@ import {
 import { FaMagnifyingGlassChart } from "react-icons/fa6";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => (e) => {
+    e.preventDefault();
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <footer>
       <div className="footer-container">
@@ -62,33 +71,28 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul className="footer-links">
             <li>
-              <Link to="/">
-                {" "}
+              <Link to="/" onClick={handleNavigation('/')}>
                 <FaHome /> Home
               </Link>
             </li>
             <li>
-              <Link to="/technologyconsultant">
-                {" "}
+              <Link to="/technologyconsultant" onClick={handleNavigation('/technologyconsultant')}>
                 <FaServicestack /> Services
               </Link>
             </li>
             <li>
-              <Link to="/aboutus">
-                {" "}
+              <Link to="/aboutus" onClick={handleNavigation('/aboutus')}>
                 <FaUser /> About Us
               </Link>
             </li>
             <li>
-              <Link to="/blog">
-                {" "}
+              <Link to="/blog" onClick={handleNavigation('/blog')}>
                 <FaBook /> Resources
               </Link>
             </li>
             <li>
-              <Link to="/contact">
-                {" "}
-                <FaPhoneAlt /> Contact
+              <Link to="/contact" onClick={handleNavigation('/contact')}>
+                <FaPhoneAlt /> Contact Us
               </Link>
             </li>
           </ul>
@@ -99,44 +103,51 @@ const Footer = () => {
           <h3>Our Services</h3>
           <ul className="footer-links">
             <li>
-              <Link to="/technologyconsultant">
-                {" "}
+              <Link to="/technologyconsultant" onClick={handleNavigation('/technologyconsultant')}>
                 <FaHandshake /> Technology Consultancy
               </Link>
             </li>
             <li>
-              <Link to="/compliance_assessment">
-                {" "}
+              <Link to="/compliance_assessment" onClick={handleNavigation('/compliance_assessment')}>
                 <FaMagnifyingGlassChart /> Compliance Assessment
               </Link>
             </li>
             <li>
-              <Link to="/risk-management">
-                {" "}
+              <Link to="/risk-management" onClick={handleNavigation('/risk-management')}>
                 <FaExclamationTriangle /> Risk Management
               </Link>
             </li>
             <li>
-              <Link to=""> <FaDev/> DevSecOps Consultancy</Link>
+              <Link to="/devsecops" onClick={handleNavigation('/devsecops')}>
+                <FaDev /> DevSecOps Consultancy
+              </Link>
             </li>
             <li>
-              <Link to=""> <FaCloudUploadAlt/> Cloud Security</Link>
+              <Link to="/cloud-security" onClick={handleNavigation('/cloud-security')}>
+                <FaCloudUploadAlt /> Cloud Security
+              </Link>
             </li>
             <li>
-              <Link to=""> <FaRobot/> AI/ML Security</Link>
+              <Link to="/ai-ml-security" onClick={handleNavigation('/ai-ml-security')}>
+                <FaRobot /> AI/ML Security
+              </Link>
             </li>
             <li>
-              <Link to=""> <FaThinkPeaks/> IOT Security</Link>
+              <Link to="/iot-security" onClick={handleNavigation('/iot-security')}>
+                <FaThinkPeaks /> IOT Security
+              </Link>
             </li>
             <li>
-              <Link to=""> <FaMobileAlt/> Mobile and Web Development Security</Link>
+              <Link to="/mobile-web-security" onClick={handleNavigation('/mobile-web-security')}>
+                <FaMobileAlt /> Mobile and Web Development Security
+              </Link>
             </li>
           </ul>
         </div>
 
         {/* Contact Section */}
         <div className="footer-section">
-          <Link to="/contact" className="contact-button">
+          <Link to="/contact" className="contact-button" onClick={handleNavigation('/contact')}>
             <FaPhoneAlt /> CONTACT US
           </Link>
         </div>

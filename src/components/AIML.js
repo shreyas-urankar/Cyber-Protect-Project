@@ -6,7 +6,6 @@ import {
     FaCode,
     FaDatabase,
     FaChartLine,
-    FaArrowRight,
     FaRegCheckCircle,
     FaUserShield,
     FaBalanceScale
@@ -15,7 +14,7 @@ import {
 import ai from "../assets/ai_1.jpg";
 import ai2 from "../assets/ai_2.jpg";
 import ai_audit from "../assets/ai_audits.jpg";
-
+import ai_security from "../assets/ai_security.png";
 const AIMLSecurityAudit = () => {
     return (
         <div className="rservice-page-container">
@@ -27,14 +26,15 @@ const AIMLSecurityAudit = () => {
 
                 <section className="rservice-overview">
                     <div className="r-tech-icon-main">
-                        
+
                     </div>
 
                     <p className="rservice-intro">
-                        Our specialized AI/ML security audit services help organizations identify and mitigate unique risks
-                        in machine learning systems. We assess your AI pipelines, models, and data flows to ensure they meet
-                        security, compliance, and ethical standards while maintaining model integrity and performance.
+                        Our specialized AI/ML security audit services help organizations identify, analyze, and mitigate the unique risks associated with machine learning models and pipelines. We go beyond traditional audits to examine vulnerabilities specific to AI/ML systems, such as adversarial attacks, model poisoning, data leakage, and bias amplification.
+                        <br/> 
+                        Our team evaluates every layer of your AI stack—data ingestion, model training, deployment, and inference—to ensure robust security and compliance with global standards like GDPR, NIST, and the EU AI Act. We also assess your system's fairness, explainability, and ethical performance to help your organization build trust and resilience in a rapidly evolving AI landscape.
                     </p>
+
 
                     <div className="rcontent-block">
                         <h3>Our AI/ML Security Audit Methodology</h3>
@@ -158,9 +158,16 @@ const AIMLSecurityAudit = () => {
                                         <li>API endpoint testing</li>
                                         <li>Model extraction prevention</li>
                                         <li>Real-time monitoring review</li>
+                                        
                                     </ul>
+                                    
                                 </div>
+                                
                             </div>
+                            <div className="security-image-wrapper">
+                            <img src={ai_security} alt="AI Security Protection" className="security-image" />
+                        </div>
+
                         </div>
                     </div>
 
@@ -199,7 +206,7 @@ const AIMLSecurityAudit = () => {
                         <div className="rtools-grid">
                             <div className="rtool-category">
                                 <h4>
-                                     Adversarial Testing
+                                    Adversarial Testing
                                 </h4>
                                 <ul>
                                     <li>CleverHans</li>
@@ -375,7 +382,6 @@ const AIMLSecurityAudit = () => {
                         <div className="rcta-section" style={{ marginTop: '2rem', textAlign: 'center' }}>
                             <h3>Our Assessment Report Contains</h3>
                             <p>Detailed, Deeply Analyzed Content, Combined With Actionable Advice.</p>
-                            <button className="rcta-button">Download Sample Report</button>
                         </div>
                     </div>
 
@@ -425,11 +431,6 @@ const AIMLSecurityAudit = () => {
                             Protect your organization from emerging AI security risks with our
                             comprehensive audit services.
                         </p>
-                        <div className="rcta-section">
-                            <button className="rcta-button">
-                                Request AI Security Audit <FaArrowRight style={{ marginLeft: '8px' }} />
-                            </button>
-                        </div>
                     </div>
                 </section>
             </main>

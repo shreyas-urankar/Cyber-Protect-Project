@@ -8,7 +8,6 @@ import {
   FaTasks,
   FaArrowRight,
   FaRegCheckCircle,
-  FaIndustry,
   FaUserShield,
   FaBalanceScale,
   FaClipboardCheck
