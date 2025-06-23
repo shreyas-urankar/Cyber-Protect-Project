@@ -14,9 +14,12 @@ import ComplianceAssessment from "./components/compliance_assessment";
 import AIML from "./components/AIML";
 import CloudSecurity from "./components/CloudSecurity";
 import MobileWebSecurity from "./components/MobileWebSecurity";
+import ScrollToTop from "./components/ScrollToTop";
+
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
