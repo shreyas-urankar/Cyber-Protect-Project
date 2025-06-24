@@ -65,7 +65,7 @@ const Navbar = () => {
                 <Link to='/aiml'>AI/ML Security</Link>
               </li>
               <li>
-                <Link to="">IOT Security</Link>
+                <Link to="/iot-security">IOT Security</Link>
               </li>
               <li>
                 <Link to="/mobilewebsecurity">Mobile and Web Development Security</Link>
