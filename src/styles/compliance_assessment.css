@@ -18,7 +18,7 @@
     --danger: #000000;
 }
 
-.service-page-container {
+.compliance-service-page-container {
     min-height: 100vh;
     background: none;
     position: relative;
@@ -26,7 +26,7 @@
     flex-direction: column;
 }
 
-.service-page-container::before {
+.compliance-service-page-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -37,7 +37,7 @@
     z-index: 0;
 }
 
-.main-section {
+.compliance-main-section {
     flex: 1;
     padding: 2rem 4rem 3rem;
     position: relative;
@@ -48,7 +48,7 @@
     z-index: 10;
 }
 
-.header-section {
+.compliance-header-section {
     margin-bottom: 3rem;
     text-align: center;
     width: 100%;
@@ -56,7 +56,7 @@
     color: white;
 }
 
-.main-title {
+.compliance-main-title {
     font-size: 3rem;
     font-weight: 700;
     color: white;
@@ -67,20 +67,20 @@
     display: inline-block;
 }
 
-.header-line {
+.compliance-header-line {
     height: 3px;
     width: 150px;
     background: white;
     margin: 0 auto;
 }
 
-.service-overview {
+.compliance-service-overview {
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
 }
 
-.tech-icon-main {
+.compliance-tech-icon-main {
     font-size: 4rem;
     color: white;
     text-align: center;
@@ -100,7 +100,7 @@
     }
 }
 
-.service-intro {
+.compliance-service-intro {
     font-size: 1.3rem;
     line-height: 1.8;
     color: white;
@@ -109,11 +109,11 @@
     text-align: center;
 }
 
-.content-block {
+.compliance-content-block {
     margin-bottom: 3rem;
 }
 
-.content-block h3 {
+.compliance-content-block h3 {
     font-size: 2rem;
     color: #A91E22;
     margin-bottom: 1.5rem;
@@ -121,7 +121,7 @@
     display: inline-block;
 }
 
-.content-block h3::after {
+.compliance-content-block h3::after {
     content: '';
     position: absolute;
     bottom: -8px;
@@ -131,21 +131,21 @@
     background: none;
 }
 
-.content-block p {
+.compliance-content-block p {
     font-size: 1.2rem;
     line-height: 1.7;
     color: black;
     margin-bottom: 1.2rem;
 }
 
-.services-list {
+.compliance-services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.service-item {
+.compliance-service-item {
     display: flex;
     gap: 1rem;
     padding: 1.5rem;
@@ -155,15 +155,15 @@
     box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
 }
 
-.service-item:hover {
+.compliance-service-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
 }
 
-.service-icon {
+.compliance-service-icon {
     width: 50px;
     height: 50px;
-    background-color: none;
+    background-color: transparent;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -173,19 +173,19 @@
     flex-shrink: 0;
 }
 
-.service-content h4 {
+.compliance-service-content h4 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #A91E22;
 }
 
-.service-content p {
+.compliance-service-content p {
     font-size: 0.95rem;
     color: black;
     line-height: 1.6;
 }
 
-.cta-section {
+.compliance-cta-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,7 +196,7 @@
     text-align: center;
 }
 
-.cta-button {
+.compliance-cta-button {
     padding: 0.75rem 1.5rem;
     background: #A91E22;
     color: white;
@@ -209,19 +209,19 @@
     box-shadow: none;
 }
 
-.cta-button:hover {
+.compliance-cta-button:hover {
     transform: translateY(-3px);
     background: #8b1a1e;
 }
 
-.faq-container {
+.compliance-faq-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 2rem;
 }
 
-.faq-item {
+.compliance-faq-item {
     border: 4px solid #056774;
     border-radius: 8px;
     padding: 1rem;
@@ -229,16 +229,16 @@
     box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
 }
 
-.faq-item:hover {
+.compliance-faq-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
 }
 
-.faq-toggle {
+.compliance-faq-toggle {
     display: none;
 }
 
-.faq-question {
+.compliance-faq-question {
     font-size: 1.2rem;
     font-weight: 600;
     color: black;
@@ -249,7 +249,7 @@
     padding-right: 30px;
 }
 
-.faq-question::after {
+.compliance-faq-question::after {
     content: "+";
     font-size: 24px;
     color: #A91E22;
@@ -260,11 +260,11 @@
     transition: all 0.3s ease;
 }
 
-.faq-toggle:checked + .faq-question::after {
+.compliance-faq-toggle:checked + .compliance-faq-question::after {
     content: "-";
 }
 
-.faq-answer {
+.compliance-faq-answer {
     font-size: 1rem;
     color: black;
     line-height: 1.5;
@@ -273,90 +273,138 @@
     text-align: left;
 }
 
-.faq-toggle:checked + .faq-question + .faq-answer {
+.compliance-faq-toggle:checked + .compliance-faq-question + .compliance-faq-answer {
     display: block;
 }
 
-.compliance-types {
+.compliance-compliance-types {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Increased min width for better spacing */
+    gap: 2rem; /* Increased gap for better separation */
+    margin-top: 2rem;
 }
 
-.compliance-button {
-    padding: 0.5rem 1rem;
-    background: none;
-    border: 2px solid #056774;
+.compliance-compliance-card {
+    padding: 1.5rem; /* Increased padding for inner spacing */
+    border: 4px solid #056774;
     border-radius: 8px;
-    font-size: 0.9rem;
-    color: black;
-    cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
 }
 
-.compliance-button:hover {
-    background: #056774;
-    color: white;
+.compliance-compliance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
+}
+
+.compliance-compliance-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #A91E22;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.compliance-compliance-card ul {
+    list-style-type: disc; /* Ensure default bullet style */
+    padding-left: 20px; /* Add spacing between bullet and text */
+}
+
+.compliance-compliance-card li {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0.5rem;
+    padding-left: 10px; /* Additional spacing from the left edge */
+}
+
+.compliance-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.compliance-tool-category {
+    padding: 1rem;
+    border: 4px solid #056774;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
+}
+
+.compliance-tool-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
+}
+
+.compliance-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.compliance-benefit-item {
+    padding: 1rem;
+    border: 4px solid #056774;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(5, 103, 116, 0.2);
+}
+
+.compliance-benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
 }
 
 @media (max-width: 1024px) {
-    .main-section {
+    .compliance-main-section {
         padding: 2rem;
     }
-    
-    .main-title {
+    .compliance-main-title {
         font-size: 2.5rem;
     }
-    
-    .services-list {
+    .compliance-services-list {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 768px) {
-    .main-section {
+    .compliance-main-section {
         padding: 1.5rem;
     }
-    
-    .main-title {
+    .compliance-main-title {
         font-size: 2rem;
         margin-top: 8rem;
     }
-    
-    .service-intro {
+    .compliance-service-intro {
         font-size: 1.1rem;
     }
-    
-    .content-block h3 {
+    .compliance-content-block h3 {
         font-size: 1.5rem;
     }
-    
-    .content-block p {
+    .compliance-content-block p {
         font-size: 1rem;
     }
-    
-    .service-item {
+    .compliance-service-item {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    
-    .service-content h4 {
+    .compliance-service-content h4 {
         text-align: center;
     }
 }
 
 @media (max-width: 480px) {
-    .main-title {
+    .compliance-main-title {
         font-size: 1.8rem;
     }
-    
-    .service-intro {
+    .compliance-service-intro {
         font-size: 1rem;
     }
-    
-    .compliance-types {
-        grid-template-columns: repeat(2, 1fr);
+    .compliance-compliance-types {
+        grid-template-columns: 1fr;
     }
 }
