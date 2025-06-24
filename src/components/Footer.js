@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "../styles/Footer.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -17,13 +16,12 @@ import {
   FaCloudUploadAlt,
   FaRobot,
   FaThinkPeaks,
-  FaMobileAlt
+  FaMobileAlt,
 } from "react-icons/fa";
 import { FaMagnifyingGlassChart } from "react-icons/fa6";
 
 const Footer = () => {
   const navigate = useNavigate();
-  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleNavigation = (path) => (e) => {
     e.preventDefault();
@@ -72,77 +70,27 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul className="footer-links">
             <li>
-              <Link to="/" onClick={handleNavigation('/')}>
+              <Link to="/" onClick={handleNavigation("/")}>
                 <FaHome /> Home
               </Link>
             </li>
             <li>
-              <div
-                className="footer-dropdown"
-                onMouseEnter={() => setDropdownOpen(true)}
-                onMouseLeave={() => setDropdownOpen(false)}
-              >
-                <Link to="#" onClick={(e) => e.preventDefault()}>
-                  <FaServicestack /> Services
-                </Link>
-                {dropdownOpen && (
-                  <ul className="footer-dropdown-menu">
-                    <li>
-                      <Link to="/technologyconsultant" onClick={handleNavigation('/technologyconsultant')}>
-                        <FaHandshake /> Technology Consultancy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/compliance_assessment" onClick={handleNavigation('/compliance_assessment')}>
-                        <FaMagnifyingGlassChart /> Compliance Assessment
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/risk-management" onClick={handleNavigation('/risk-management')}>
-                        <FaExclamationTriangle /> Risk Management
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/devsecops" onClick={handleNavigation('/devsecops')}>
-                        <FaDev /> DevSecOps Consultancy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/cloud-security" onClick={handleNavigation('/cloudsecurity')}>
-                        <FaCloudUploadAlt /> Cloud Security
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/aiml" onClick={handleNavigation('/AIML')}>
-                        <FaRobot /> AI/ML Security
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/iot-security" onClick={handleNavigation('/iot-security')}>
-                        <FaThinkPeaks /> IOT Security
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/mobile-web-security" onClick={handleNavigation('/mobile-web-security')}>
-                        <FaMobileAlt /> Mobile and Web Development Security
-                      </Link>
-                    </li>
-                  </ul>
-                )}
-              </div>
-            </li>
+            <Link to="/technologyconsultant" onClick={handleNavigation('/technologyconsultant')}>
+                <FaServicestack /> Services
+              </Link>
+              </li>
             <li>
-              <Link to="/aboutus" onClick={handleNavigation('/aboutus')}>
+              <Link to="/aboutus" onClick={handleNavigation("/aboutus")}>
                 <FaUser /> About Us
               </Link>
             </li>
             <li>
-              <Link to="/blog" onClick={handleNavigation('/blog')}>
+              <Link to="/blog" onClick={handleNavigation("/blog")}>
                 <FaBook /> Resources
               </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={handleNavigation('/contact')}>
+              <Link to="/contact" onClick={handleNavigation("/contact")}>
                 <FaPhoneAlt /> Contact Us
               </Link>
             </li>
@@ -154,92 +102,60 @@ const Footer = () => {
           <h3>Our Services</h3>
           <ul className="footer-links">
             <li>
-              <div
-                className="footer-dropdown"
-                onMouseEnter={() => setDropdownOpen(true)}
-                onMouseLeave={() => setDropdownOpen(false)}
+              <Link
+                to="/technologyconsultant"
+                onClick={handleNavigation("/technologyconsultant")}
               >
-                <span>
-                  <FaHandshake /> Technology Consultancy
-                </span>
-                {dropdownOpen && (
-                  <ul className="footer-dropdown-menu">
-                    <li>
-                      <Link to="/technologyconsultant" onClick={handleNavigation('/technologyconsultant')}>
-                        <FaHandshake /> Technology Consultancy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/compliance_assessment" onClick={handleNavigation('/compliance_assessment')}>
-                        <FaMagnifyingGlassChart /> Compliance Assessment
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/risk-management" onClick={handleNavigation('/risk-management')}>
-                        <FaExclamationTriangle /> Risk Management
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/devsecops" onClick={handleNavigation('/devsecops')}>
-                        <FaDev /> DevSecOps Consultancy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/cloud-security" onClick={handleNavigation('/cloudsecurity')}>
-                        <FaCloudUploadAlt /> Cloud Security
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/aiml" onClick={handleNavigation('/AIML')}>
-                        <FaRobot /> AI/ML Security
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/iot-security" onClick={handleNavigation('/iot-security')}>
-                        <FaThinkPeaks /> IOT Security
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/mobile-web-security" onClick={handleNavigation('/mobile-web-security')}>
-                        <FaMobileAlt /> Mobile and Web Development Security
-                      </Link>
-                    </li>
-                  </ul>
-                )}
-              </div>
+                <FaHandshake /> Technology Consultancy
+              </Link>
             </li>
             <li>
-              <Link to="/compliance_assessment" onClick={handleNavigation('/compliance_assessment')}>
+              <Link
+                to="/compliance_assessment"
+                onClick={handleNavigation("/compliance_assessment")}
+              >
                 <FaMagnifyingGlassChart /> Compliance Assessment
               </Link>
             </li>
             <li>
-              <Link to="/risk-management" onClick={handleNavigation('/risk-management')}>
+              <Link
+                to="/risk-management"
+                onClick={handleNavigation("/risk-management")}
+              >
                 <FaExclamationTriangle /> Risk Management
               </Link>
             </li>
             <li>
-              <Link to="/devsecops" onClick={handleNavigation('/devsecops')}>
+              <Link to="/devsecops" onClick={handleNavigation("/devsecops")}>
                 <FaDev /> DevSecOps Consultancy
               </Link>
             </li>
             <li>
-              <Link to="/cloud-security" onClick={handleNavigation('/cloudsecurity')}>
+              <Link
+                to="/cloud-security"
+                onClick={handleNavigation("/cloudsecurity")}
+              >
                 <FaCloudUploadAlt /> Cloud Security
               </Link>
             </li>
             <li>
-              <Link to="/aiml" onClick={handleNavigation('/AIML')}>
+              <Link to="/aiml" onClick={handleNavigation("/AIML")}>
                 <FaRobot /> AI/ML Security
               </Link>
             </li>
             <li>
-              <Link to="/iot-security" onClick={handleNavigation('/iot-security')}>
+              <Link
+                to="/iot-security"
+                onClick={handleNavigation("/iot-security")}
+              >
                 <FaThinkPeaks /> IOT Security
               </Link>
             </li>
             <li>
-              <Link to="/mobile-web-security" onClick={handleNavigation('/mobile-web-security')}>
+              <Link
+                to="/mobilewebsecurity"
+                onClick={handleNavigation("/mobilewebsecurity")}
+              >
                 <FaMobileAlt /> Mobile and Web Development Security
               </Link>
             </li>
@@ -248,7 +164,11 @@ const Footer = () => {
 
         {/* Contact Section */}
         <div className="footer-section">
-          <Link to="/contact" className="contact-button" onClick={handleNavigation('/contact')}>
+          <Link
+            to="/contact"
+            className="contact-button"
+            onClick={handleNavigation("/contact")}
+          >
             <FaPhoneAlt /> CONTACT US
           </Link>
         </div>
