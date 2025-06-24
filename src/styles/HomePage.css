@@ -17,7 +17,7 @@ body {
 }
 
 /* Hero Section */
-.hero {
+.homehero {
   position: relative;
   width: 100%;
   min-height: 95vh;
@@ -32,7 +32,7 @@ body {
   overflow: hidden;
 }
 
-.hero::before {
+.homehero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -43,7 +43,7 @@ body {
   z-index: 1;
 }
 
-.overlay {
+.homeoverlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@ body {
   z-index: 2;
 }
 
-.hero-content {
+.homehero-content {
   position: relative;
   z-index: 3;
   max-width: 650px;
@@ -62,7 +62,7 @@ body {
   animation: fadeInUp 1s ease-out forwards;
 }
 
-.hero-content h1 {
+.homehero-content h1 {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -72,14 +72,14 @@ body {
   font-weight: 700;
 }
 
-.hero-content .highlight {
+.homehero-content .homehighlight {
   color: #f43f5e;
   text-shadow: 0 0 8px rgba(244, 63, 94, 0.6);
   position: relative;
   display: inline-block;
 }
 
-.hero-content .highlight::after {
+.homehero-content .homehighlight::after {
   content: '';
   position: absolute;
   bottom: -4px;
@@ -92,11 +92,11 @@ body {
   transition: transform 0.5s ease;
 }
 
-.hero-content:hover .highlight::after {
+.homehero-content:hover .homehighlight::after {
   transform: scale(1);
 }
 
-.hero-content .hero-description {
+.homehero-content .hero-description {
   font-size: 1.125rem;
   line-height: 1.8;
   margin-bottom: 35x;
@@ -104,12 +104,12 @@ body {
   max-width: 90%
 }
 
-.hero-content .highlight-text {
+.homehero-content .homehighlight-text {
   color: #f43f5e;
   font-weight: 700;
 }
 
-.hero-button {
+.homehero-button {
   display: inline-block;
   padding: 15px 32px;
   background: #f43f5e;
@@ -126,16 +126,17 @@ body {
   z-index: 1;
 }
 
-.hero-button:hover {
+.homehero-button:hover {
   background: #e11d48;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(244, 63, 94, 0.3);
 }
 
-.hero-button:hover::before {
+.homehero-button:hover::before {
   left: 100%;
   transition: 0.7s;
 }
+
 
 
 
@@ -350,10 +351,10 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(135deg, rgba(5, 103, 116, 0.85) 0%, rgba(0, 0, 0, 0.7) 100%);
-  z-index: 1;  
+  z-index: 1;
 }
 
-.cta *{
+.cta * {
   position: relative;
   z-index: 1;
 }
