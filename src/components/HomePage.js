@@ -46,6 +46,13 @@ const HomePage = () => {
         <h2>What We Offer</h2>
         <div className="services-grid">
           <div className="service-card">
+            <h3>Technology Consultancy</h3>
+            <p>
+              Leveraging best-in-class tools and technologies tailored to your
+              unique needs.
+            </p>
+          </div>
+          <div className="service-card">
             <h3>Compliance Assessments</h3>
             <p>
               Continuous assessments of your data, platforms, and procedures to
@@ -60,10 +67,44 @@ const HomePage = () => {
             </p>
           </div>
           <div className="service-card">
-            <h3>Technology Consultancy</h3>
+            <h3>DevSecOps Security</h3>
             <p>
-              Leveraging best-in-class tools and technologies tailored to your
-              unique needs.
+              We deliver integrated security throughout your software
+              development lifecycle, "shifting left" to proactively identify and
+              mitigate vulnerabilities as a convenient, managed service.
+            </p>
+          </div>
+          <div className="service-card">
+            <h3>Cloud Security</h3>
+            <p>
+              We provide proactive, integrated security monitoring and
+              protection for your cloud environments, delivered as a fully
+              managed service.
+            </p>
+          </div>
+          <div className="service-card">
+            <h3>AI/ML Security</h3>
+            <p>
+              We deliver specialized security solutions to protect your
+              Artificial Intelligence and Machine Learning models and data from
+              adversarial attacks and vulnerabilities, provided as a managed
+              service.
+            </p>
+          </div>
+          <div className="service-card">
+            <h3>IOT Security</h3>
+            <p>
+              We offer end-to-end security for your Internet of Things devices
+              and ecosystems, encompassing identification, monitoring, and
+              threat response as a managed offering.
+            </p>
+          </div>
+          <div className="service-card">
+            <h3>Mobile and Web Development Security</h3>
+            <p>
+              We embed security best practices and continuous testing into your
+              mobile and web application development lifecycle, ensuring secure
+              code and resilient applications.
             </p>
           </div>
         </div>
