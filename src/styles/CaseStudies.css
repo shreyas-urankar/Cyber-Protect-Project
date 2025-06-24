@@ -1,267 +1,272 @@
 /* CaseStudies.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Yatra+One&display=swap');
 
-/* Component Container */
-.case-studies-container {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    color: #333;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --c-primary: #056774;
+  --c-secondary: #A91E22;
+  --c-bg: #f7fbfc;
+  --c-dark: #222831;
+  --c-light: #ffffff;
+  --c-accent: #00bcd4;
+}
+
+.cs-page-container {
+  min-height: 100vh;
+  background: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.cs-page-container::after{
+  content: none;
+}
+.cs-page-container::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 21%;
+  background-color: #056774;
+  z-index: 0;
+}
+
+.cs-main-section {
+  flex: 1;
+  padding: 2rem 4rem 3rem;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.cs-header-section {
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  color: var(--c-light);
+}
+
+.cs-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  margin-top: 8rem;
+  text-shadow: none;
+  position: relative;
+  display: inline-block;
+}
+
+.cs-header-line {
+  height: 3px;
+  width: 150px;
+  background: white;
+  margin: 0 auto;
+}
+
+.cs-service-overview {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.cs-cloud-icon-main {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: cs-float 3s ease-in-out infinite;
+}
+
+@keyframes cs-float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.cs-service-intro {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: white;
+  margin-bottom: 3rem;
+  margin-top: -2rem;
+  text-align: center;
+}
+
+.cs-content-block {
+  margin-bottom: 3rem;
+}
+
+.cs-content-block h3 {
+  font-size: 2rem;
+  color: var(--c-secondary);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.cs-content-block h3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--c-primary);
+}
+
+.cs-content-block p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--c-dark);
+  margin-bottom: 1.2rem;
+}
+
+.cs-case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.cs-case-card {
+  background: var(--c-light);
+  border: 2px solid #056774;
+  border-radius: 8px;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 2px 8px rgba(5, 103, 116, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s;
+  position: relative;
+}
+
+.cs-case-card:hover {
+  transform: translateY(-8px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(5, 103, 116, 0.13);
+  border-color: #A91E22;
+}
+
+.cs-case-card h4 {
+  color: #A91E22;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cs-case-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.cs-card-icon {
+  font-size: 2.2rem;
+  color: #056774;
+  margin-bottom: 0.7rem;
+}
+
+.cs-card-stat {
+  background: #056774;
+  color: #fff;
+  font-size: 0.98rem;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 4px 16px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.cs-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cs-benefit-item {
+  background: var(--c-light);
+  border: 2px solid var(--c-primary);
+  border-radius: 8px;
+  padding: 1.2rem;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(5, 103, 116, 0.08);
+}
+
+.cs-benefit-item h4 {
+  color: var(--c-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.cs-benefit-item p {
+  color: var(--c-dark);
+  font-size: 0.98rem;
+}
+
+.cs-cta-link {
+  display: inline-block;
+  background: #056774;
+  color: #fff;
+  padding: 0.9rem 2.2rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1.2rem;
+  transition: background 0.2s, color 0.2s, transform 0.18s;
+  box-shadow: 0 2px 8px rgba(5, 103, 116, 0.08);
+}
+
+.cs-cta-link:hover {
+  background: #A91E22;
+  color: #fff;
+  transform: scale(1.04);
+}
+
+@media (max-width: 1024px) {
+  .cs-main-section {
+    padding: 2rem 1rem 2rem;
   }
-  
-  /* Reusable Classes */
-  .case-studies-red-heading {
-    color: #a91e22;
-    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .cs-main-title {
+    font-size: 2.2rem;
+    margin-top: 5rem;
   }
-  
-  .case-studies-same-heading {
-    font-size: 32px;
-    text-align: left;
+  .cs-case-studies-grid, .cs-benefits-grid {
+    grid-template-columns: 1fr;
   }
-  
-  /* Hero Section */
-  .case-studies-hero {
-    background-color: #008080;
-    color: white;
-    padding: 150px 10% 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 50vh;
-    min-height: 300px;
+}
+
+@media (max-width: 480px) {
+  .cs-main-title {
+    font-size: 1.5rem;
+    margin-top: 3rem;
   }
-  
-  .case-studies-hero-content {
-    max-width: 700px;
-    width: 100%;
+  .cs-service-intro {
+    font-size: 1rem;
   }
-  
-  .case-studies-hero-h1 {
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: left;
+  .cs-content-block h3 {
+    font-size: 1.2rem;
   }
-  
-  .case-studies-hero-hr {
-    width: 120px;
-    height: 3px;
-    background-color: #B2D8D8;
-    border-radius: 50px;
-    margin: 16px 0;
-    border: none;
-  }
-  
-  .case-studies-hero-p {
-    font-size: 22px;
-    font-weight: 300;
-    margin-bottom: 30px;
-    opacity: 0.9;
-    text-align: justify;
-    line-height: 1.6;
-  }
-  
-  .case-studies-hero-button {
-    background-color: #ffffff;
-    color: #cb4d62;
-    border: none;
-    padding: 12px 28px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-right: auto;
-    display: block;
-  }
-  
-  .case-studies-hero-button:hover {
-    background-color: #f5f5f5;
-  }
-  
-  /* DigiDefense Section */
-  .case-studies-DigiDefense-section {
-    padding: 80px 10%;
-    background-color: #f9f9f9;
-  }
-  
-  .case-studies-section-title {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  .case-studies-section-subtext {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 60px;
-    line-height: 1.6;
-    text-align: justify;
-    font-weight: 300;
-  }
-  
-  .case-studies-image-wrapper {
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  .case-studies-main-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border: 1px solid #e1e1e1;
-  }
-  
-  /* CTA Section */
-  .case-studies-cta-section {
-    background-color: #008080;
-    color: #fff;
-    border: 2px solid #B2D8D8;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    margin: 40px 0 40px 10%;
-    margin-right: 0;
-    width: calc(100% - 10%);
-  }
-  
-  .case-studies-cta-content-wrapper {
-    padding: 50px 12%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .case-studies-cta-content {
-    max-width: 70%;
-  }
-  
-  .case-studies-cta-content-h2 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  
-  .case-studies-cta-content-p {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.6;
-    text-align: justify;
-  }
-  
-  .case-studies-cta-button {
-    background-color: #a91e22;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 25px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-decoration: none;
-  }
-  
-  .case-studies-cta-button:hover {
-    background-color: #8b1a1e;
-    transform: scale(1.05);
-  }
-  
-  .case-studies-cta-button::after {
-    content: "→";
-    font-size: 18px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 992px) {
-    .case-studies-hero {
-      padding: 100px 10% 60px;
-    }
-    
-    .case-studies-hero-h1 {
-      font-size: 42px;
-    }
-    
-    .case-studies-hero-p {
-      font-size: 20px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .case-studies-same-heading {
-      font-size: 32px;
-    }
-  
-    .case-studies-hero {
-      padding: 60px 15px;
-      height: auto;
-    }
-  
-    .case-studies-hero-h1 {
-      font-size: 34px;
-    }
-  
-    .case-studies-hero-p {
-      font-size: 18px;
-    }
-  
-    .case-studies-hero-button {
-      padding: 10px 24px;
-      font-size: 16px;
-    }
-  
-    .case-studies-DigiDefense-section {
-      padding: 40px 15px;
-    }
-  
-    .case-studies-section-subtext {
-      font-size: 16px;
-    }
-  
-    .case-studies-cta-section {
-      border-radius: 60px 10px 60px 10px;
-      margin: 40px 15px;
-      width: auto;
-    }
-  
-    .case-studies-cta-content-wrapper {
-      padding: 40px 20px;
-      flex-direction: column;
-    }
-  
-    .case-studies-cta-content-h2 {
-      font-size: 24px;
-    }
-  
-    .case-studies-cta-content-p {
-      font-size: 14px;
-      line-height: 1.8;
-    }
-  
-    .case-studies-cta-button {
-      padding: 10px 20px;
-      font-size: 14px;
-      align-self: flex-start;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .case-studies-hero-h1 {
-      font-size: 30px;
-    }
-    
-    .case-studies-hero-p {
-      font-size: 16px;
-    }
-    
-    .case-studies-hero-button {
-      font-size: 15px;
-    }
-  }
+}
