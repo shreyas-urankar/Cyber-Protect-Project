@@ -12,6 +12,8 @@ import TecnologyConsultant from "./components/TechnologyConsultant";
 import Blog from "./components/Blog";
 import ComplianceAssessment from "./components/compliance_assessment";
 import AIML from "./components/AIML";
+import IotSecurity from "./components/IotSecurity";
+
 
 import ContactPage from "./components/Contact";
 
@@ -35,12 +37,11 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/aiml" element={<AIML />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route
-          path="/compliance_assessment"
-          element={<ComplianceAssessment />}
-        />
+        <Route path="/compliance_assessment" element={<ComplianceAssessment />} />
+        <Route path="/iot-security" element={<IotSecurity />} />
         <Route path="/cloudsecurity" element={<CloudSecurity />} />
         <Route path="/mobilewebsecurity" element={<MobileWebSecurity />} />
+
       </Routes>
       <Footer />
     </Router>
