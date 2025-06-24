@@ -2,9 +2,6 @@ import React from "react";
 import "../styles/AboutUs.css";
 import {
   FaClock,
-  FaFileAlt,
-  FaLaptop,
-  FaShieldAlt,
   FaTools,
   FaTrophy,
 } from "react-icons/fa";
@@ -36,51 +33,6 @@ const AboutUs = () => {
               cutting-edge spells to defend your organization's data, processes,
               IT platforms, and brand name.
             </p>
-          </div>
-
-          <div className="acontent-block">
-            <h3>What We Offer ❓</h3>
-            <div className="aservices-list">
-              <div className="aservice-item">
-                <div className="aservice-icon compliance-icon">
-                  <FaFileAlt />
-                </div>
-                <div className="aservice-content">
-                  <h4>Compliance Assessments</h4>
-                  <p>
-                    Continuous assessments of your data, platforms, and
-                    procedures to comply with industry and regulatory
-                    requirements.
-                  </p>
-                </div>
-              </div>
-
-              <div className="aservice-item">
-                <div className="aservice-icon risk-icon">
-                  <FaShieldAlt />
-                </div>
-                <div className="aservice-content">
-                  <h4>Risk Assessments</h4>
-                  <p>
-                    Like seasoned fortune tellers, we foresee process gaps and
-                    help you fix them.
-                  </p>
-                </div>
-              </div>
-
-              <div className="aservice-item">
-                <div className="aservice-icon tech-icon">
-                  <FaLaptop />
-                </div>
-                <div className="aservice-content">
-                  <h4>Technology Consultancy</h4>
-                  <p>
-                    Our experience with the best tools and technologies to suit
-                    your requirements.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="acontent-block">
