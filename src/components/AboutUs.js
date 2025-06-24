@@ -1,10 +1,6 @@
 import React from "react";
 import "../styles/AboutUs.css";
-import {
-  FaClock,
-  FaTools,
-  FaTrophy,
-} from "react-icons/fa";
+import { FaClock, FaTools, FaTrophy } from "react-icons/fa";
 
 const AboutUs = () => {
   return (

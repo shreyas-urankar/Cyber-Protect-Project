@@ -96,8 +96,8 @@ body {
   transform: scale(1);
 }
 
-.homehero-content .hero-description {
-  font-size: 1.125rem;
+.homehero-content .homehero-description {
+  font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 35x;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
@@ -187,7 +187,7 @@ body {
 }
 
 .about p {
-  font-size: 1.0625rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 35px;
   color: #000000;
@@ -545,7 +545,7 @@ body {
     font-size: 40px;
   }
 
-  .hero-content .hero-description {
+  .hero-content .homehero-description {
     font-size: 16px;
   }
 
@@ -578,7 +578,7 @@ body {
     font-size: 32px;
   }
 
-  .hero-content .hero-description {
+  .hero-content .homehero-description {
     font-size: 15px;
   }
 
@@ -726,6 +726,7 @@ body {
 }
 
 .case-content h3 {
+  font-size: 1.3rem;
   color: #056774;
   margin-bottom: 1rem;
 }

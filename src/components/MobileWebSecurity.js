@@ -6,12 +6,9 @@ import {
   FaLock,
   FaUserShield,
   FaShieldAlt,
-  FaKey,
   FaBug,
   FaSyncAlt,
-  FaFingerprint,
   FaTools,
-  FaChartLine,
   FaHandsHelping,
 } from "react-icons/fa";
 import { FaArrowDownUpAcrossLine, FaMoneyBillTrendUp } from "react-icons/fa6";
@@ -186,10 +183,7 @@ const MobileWebSecurity = () => {
                 </ul>
               </div>
               <div className="mwtrend-image">
-                <img
-                  src={mobile_security}
-                  alt="Mobile & Web Security Trends"
-                />
+                <img src={mobile_security} alt="Mobile & Web Security Trends" />
               </div>
             </div>
           </div>

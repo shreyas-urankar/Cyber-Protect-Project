@@ -192,10 +192,7 @@ const CloudSecurity = () => {
             <h3>Our Approach</h3>
             <div className="cprocess-container">
               <div className="cprocess-image">
-                <img
-                  src={cloud_approach}
-                  alt="Cloud Security Process"
-                />
+                <img src={cloud_approach} alt="Cloud Security Process" />
               </div>
               <div className="cprocess-steps">
                 <div className="cprocess-step">

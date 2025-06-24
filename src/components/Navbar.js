@@ -104,10 +104,10 @@ const Navbar = () => {
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}
     >
-        <div className="logo">
-          <img className="logo-img" src={logo} alt="DigiDefence Logo" />
-          <span>DigiDefence</span>
-        </div>
+      <div className="logo">
+        <img className="logo-img" src={logo} alt="DigiDefence Logo" />
+        <span>DigiDefence</span>
+      </div>
 
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li>

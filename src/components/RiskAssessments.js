@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/RiskAssessments.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/RiskAssessments.css";
 import {
   FaShieldAlt,
   FaSearch,
@@ -10,14 +10,17 @@ import {
   FaRegCheckCircle,
   FaUserShield,
   FaBalanceScale,
-  FaClipboardCheck
-} from 'react-icons/fa';
+  FaClipboardCheck,
+} from "react-icons/fa";
 // import riskAssessmentProcess from '../assets/risk-assessment-process.jpg';
 // import securityFramework from '../assets/security-framework.jpg';
 // import complianceStandards from '../assets/compliance-standards.jpg';
-const riskAssessmentProcess = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60';
-const securityFramework = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60';
-const complianceStandards = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60';
+const riskAssessmentProcess =
+  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
+const securityFramework =
+  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
+const complianceStandards =
+  "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
 
 const RiskAssessments = () => {
   return (
@@ -34,18 +37,22 @@ const RiskAssessments = () => {
           </div>
 
           <p className="rservice-intro">
-            Our comprehensive cybersecurity risk assessment services provide organizations with 
-            actionable insights to identify, analyze, and mitigate digital threats. Through 
-            rigorous evaluation methodologies, we help you understand your risk landscape, 
-            prioritize security investments, and build resilient defenses against evolving 
-            cyber threats.
+            Our comprehensive cybersecurity risk assessment services provide
+            organizations with actionable insights to identify, analyze, and
+            mitigate digital threats. Through rigorous evaluation methodologies,
+            we help you understand your risk landscape, prioritize security
+            investments, and build resilient defenses against evolving cyber
+            threats.
           </p>
 
           <div className="rcontent-block">
             <h3>Our Risk Assessment Methodology</h3>
             <div className="rprocess-container">
               <div className="rprocess-image">
-                <img src={riskAssessmentProcess} alt="Risk Assessment Process" />
+                <img
+                  src={riskAssessmentProcess}
+                  alt="Risk Assessment Process"
+                />
               </div>
               <div className="rprocess-steps">
                 <div className="rprocess-step">
@@ -53,8 +60,8 @@ const RiskAssessments = () => {
                   <div className="rstep-content">
                     <h4>Asset Identification</h4>
                     <p>
-                      Catalog all critical digital assets, systems, and data flows
-                      within your organization.
+                      Catalog all critical digital assets, systems, and data
+                      flows within your organization.
                     </p>
                   </div>
                 </div>
@@ -63,8 +70,8 @@ const RiskAssessments = () => {
                   <div className="rstep-content">
                     <h4>Threat Modeling</h4>
                     <p>
-                      Identify potential threat actors and attack vectors specific
-                      to your industry and infrastructure.
+                      Identify potential threat actors and attack vectors
+                      specific to your industry and infrastructure.
                     </p>
                   </div>
                 </div>
@@ -173,8 +180,9 @@ const RiskAssessments = () => {
           <div className="rcontent-block">
             <h3>Industry-Specific Risk Frameworks</h3>
             <p>
-              We apply specialized risk assessment methodologies tailored to your
-              industry's unique threat landscape and regulatory requirements.
+              We apply specialized risk assessment methodologies tailored to
+              your industry's unique threat landscape and regulatory
+              requirements.
             </p>
             <div className="rindustry-expertise">
               <div className="rindustry-item">
@@ -307,7 +315,10 @@ const RiskAssessments = () => {
             <div className="rsolutions-showcase">
               <div className="rsolution-card">
                 <div className="rsolution-image">
-                  <img src={securityFramework} alt="Security Framework Implementation" />
+                  <img
+                    src={securityFramework}
+                    alt="Security Framework Implementation"
+                  />
                 </div>
                 <div className="rsolution-content">
                   <h4>Customized Security Frameworks</h4>
@@ -353,7 +364,8 @@ const RiskAssessments = () => {
             </p>
             <div className="rcta-section">
               <Link to="/contact" className="rcta-button">
-                Request Assessment <FaArrowRight style={{ marginLeft: '8px' }} />
+                Request Assessment{" "}
+                <FaArrowRight style={{ marginLeft: "8px" }} />
               </Link>
             </div>
           </div>
