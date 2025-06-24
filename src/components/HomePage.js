@@ -10,16 +10,16 @@ const HomePage = () => {
       <Navbar />
       <ScrollAnimation />
       {/* Hero Section */}
-      <section className="hero">
-        <div className="overlay"></div>
-        <div className="hero-content">
+      <section className="homehero">
+        <div className="homeoverlay"></div>
+        <div className="homehero-content">
           <h1>
-            Your <span className="highlight">Shield</span> in the Digital{" "}
-            <span className="highlight">Realm</span>
+            Your <span className="homehighlight">Shield</span> in the Digital{" "}
+            <span className="homehighlight">Realm</span>
           </h1>
-          <p className="hero-description">
-            At <span className="highlight-text">CyberProtect Solutions</span>,
-            we’re your vigilant guardians in the ever-evolving landscape of
+          <p className="homehero-description">
+            At <span className="homehighlight-text">CyberProtect Solutions</span>,
+            we're your vigilant guardians in the ever-evolving landscape of
             digital threats.
           </p>
         </div>
@@ -30,7 +30,7 @@ const HomePage = () => {
       <section className="about">
         <h2>Who We Are</h2>
         <p>
-          We’re a passionate team of cyber knights—experts from services,
+          We're a passionate team of cyber knights—experts from services,
           industry, compliance, and academia—armed with cutting-edge solutions
           to defend your organization’s data, processes, IT platforms, and
           brand. Our mission is to keep your digital castle safe from dragons,
@@ -71,7 +71,7 @@ const HomePage = () => {
 
       {/* CTA Section */}
       <section className="cta">
-        <h1>Join Our Quest ⚜️</h1>
+        <h1>Join Our Quest ⚜</h1>
         <h4>
           Ready to embark on this epic adventure ❔ Watch this space and follow
           us ❕
