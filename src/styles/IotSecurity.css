@@ -59,7 +59,7 @@ body {
 
 /* Hero Section */
 .iot-hero {
-  background: linear-gradient(145deg, var(--iot-primary) 0%, var(--iot-primary-dark) 100%);
+  background: linear-gradient(145deg, var(--iot-primary) 0%, var(--iot-primary) 100%);
   color: var(--iot-white);
   padding: 128px 0;
   position: relative;
@@ -111,6 +111,12 @@ body {
   letter-spacing: -0.5px;
   text-align: center;
 }
+.iot-headerline{
+  height: 3px;
+  width: 150px;
+  background: white;
+  margin: 0 auto;
+}
 
 .iot-hero-subtitle {
   font-size: 1.35rem;
@@ -119,6 +125,14 @@ body {
   max-width: 720px;
   font-weight: 400;
   text-align: center;
+}
+.iot-icon-main{
+  margin-top: 15px;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: float 3s ease-in-out infinite;
 }
 
 /* Button Styles */

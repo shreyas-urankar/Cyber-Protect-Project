@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/IotSecurity.css';
 import { FiWifi, FiCloud, FiCheck, FiCpu, FiAlertCircle, FiDatabase, FiActivity, FiServer, FiHeart, FiTruck, FiShoppingCart, FiGlobe, FiHome } from 'react-icons/fi';
 import IotImage from '../assets/iot.png';
+import { FaThinkPeaks } from 'react-icons/fa';
 
 const IOT_Security = () => {
   return (
@@ -10,6 +11,10 @@ const IOT_Security = () => {
       <section className="iot-hero">
         <div className="iot-hero-content">
           <h1>IoT Security Solutions</h1>
+        <div className='iot-headerline'></div>
+        <div className="iot-icon-main">
+            <FaThinkPeaks />
+          </div>
           <p className="iot-hero-subtitle">
             End-to-end protection for your connected devices and infrastructure
           </p>
