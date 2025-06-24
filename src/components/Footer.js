@@ -75,10 +75,13 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-            <Link to="/technologyconsultant" onClick={handleNavigation('/technologyconsultant')}>
+              <Link
+                to="/technologyconsultant"
+                onClick={handleNavigation("/technologyconsultant")}
+              >
                 <FaServicestack /> Services
               </Link>
-              </li>
+            </li>
             <li>
               <Link to="/aboutus" onClick={handleNavigation("/aboutus")}>
                 <FaUser /> About Us
