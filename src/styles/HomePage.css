@@ -20,7 +20,7 @@ body {
 .homehero {
   position: relative;
   width: 100%;
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -351,6 +351,7 @@ body {
   position: relative;
   overflow: hidden;
   display: flex;
+  opacity: 0.95;
   justify-content: center;
   align-items: center;
 }
