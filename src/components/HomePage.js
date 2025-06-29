@@ -76,9 +76,6 @@ const HomePage = () => {
           brand. Our mission is to keep your digital castle safe from dragons,
           trolls, and mischievous imps.
         </p>
-        <Link to="/aboutus" className="about-button">
-          About Us
-        </Link>
       </section>
 
       {/* Services Section */}
