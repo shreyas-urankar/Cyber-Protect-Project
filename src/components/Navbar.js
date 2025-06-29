@@ -151,10 +151,6 @@ const Navbar = () => {
           )}
         </li>
 
-        <li>
-          <Link to="/aboutus">About Us</Link>
-        </li>
-
         <li
           className="dropdown"
           onMouseEnter={() => setDropdown("resources")}

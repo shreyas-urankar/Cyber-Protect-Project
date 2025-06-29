@@ -7,12 +7,10 @@ import {
   FaFacebook,
   FaHome,
   FaServicestack,
-  FaUser,
   FaBook,
   FaPhoneAlt,
   FaHandshake,
   FaExclamationTriangle,
-  FaDev,
   FaCloudUploadAlt,
   FaRobot,
   FaThinkPeaks,
@@ -83,18 +81,8 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/aboutus" onClick={handleNavigation("/aboutus")}>
-                <FaUser /> About Us
-              </Link>
-            </li>
-            <li>
               <Link to="/blog" onClick={handleNavigation("/blog")}>
                 <FaBook /> Resources
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={handleNavigation("/contact")}>
-                <FaPhoneAlt /> Contact Us
               </Link>
             </li>
           </ul>
