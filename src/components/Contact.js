@@ -1,12 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import "../styles/Contact.css";
-import Navbar from "../components/Navbar";
 import emailjs from "emailjs-com";
 
 const ContactPage = () => {
   const headerRef = useRef(null);
 
-  // Automatically scroll to top when page loads
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -18,7 +16,6 @@ const ContactPage = () => {
     });
   };
 
-  // Add state for form fields and feedback
   const [form, setForm] = React.useState({ name: "", email: "", message: "" });
   const [status, setStatus] = React.useState("");
   const [loading, setLoading] = React.useState(false);
@@ -31,7 +28,7 @@ const ContactPage = () => {
     e.preventDefault();
     setLoading(true);
     setStatus("");
-    // Replace these with your actual EmailJS values
+
     const SERVICE_ID = "YOUR_SERVICE_ID";
     const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
     const USER_ID = "YOUR_USER_ID";
@@ -58,8 +55,6 @@ const ContactPage = () => {
 
   return (
     <div className="contact-page">
-      <Navbar />
-
       {/* Hero Section */}
       <section className="hero contact-hero" ref={headerRef}>
         <div className="overlay"></div>
@@ -82,44 +77,59 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Info Section */}
-      <section className="contact-info-section">
-        <h2>Contact Information</h2>
-        <p className="description">
-          Feel free to reach out to us using the details below.
-        </p>
-        <div className="contact-details">
-          <div className="contact-block phone-block">
-            <p style={{ fontSize: "20px", fontWeight: "bold" }}>Address</p>
-            <div className="contact-detail-item">
-              <i className="fas fa-map-marker-alt"></i>
-              <span>DigiDefence, Pune</span>
-            </div>
-            <div className="contact-detail-item">
-              <i className="fas fa-phone"></i>
-              <span>+91 999999</span>
-            </div>
+      <div className="c-content-block c-contact-info-section">
+        <div className="c-contact-boxes">
+          <div className="c-contact-box">
+            <h3>Contact Information 📞</h3>
+            <p>Phone: +91 1234567890</p>
+            <p>Hours: Mon-Fri, 9:00 AM - 6:00 PM</p>
+            <p>Support: support@cyberprotect.com</p>
           </div>
-          <div className="contact-block email-block">
-            <div className="contact-detail-item">
-              <i className="fas fa-envelope"></i>
-              <span>
-                <p style={{ fontSize: "20px", fontWeight: "bold" }}>Email</p>
-                <a href="mailto:contact@digidefence.com">
-                  contact@digidefence.com
-                </a>
-              </span>
-            </div>
+          <div className="c-contact-box">
+            <h3>Email Us 📧</h3>
+            <p>General Inquiries: info@cyberprotect.com</p>
+            <p>Business: business@cyberprotect.com</p>
+            <p>Partnerships: partners@cyberprotect.com</p>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* CTA Section */}
-      <section className="cta">
-        <h1>Get Started Today</h1>
-        <button className="cta-button" onClick={scrollToHeader}>
-          Contact Us
-        </button>
-      </section>
+      <div className="acontent-block location-section">
+        <div className="clocation-container">
+          <div className="c-company-image">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1167.1802218020332!2d74.0192211146262!3d18.493461266263342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e92f693958b3%3A0xf8a2f3d54b65c584!2sMIT ADT School of Computing!5e1!3m2!1sen!2sin!4v1750058455226!5m2!1sen!2sin](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1167.1802218020332!2d74.0192211146262!3d18.493461266263342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e92f693958b3%3A0xf8a2f3d54b65c584!2sMIT%20ADT%20School%20of%20Computing!5e1!3m2!1sen!2sin!4v1750058455226!5m2!1sen!2sin"
+              width="200%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="CyberProtect Solutions Location"
+            ></iframe>
+          </div>
+          <div className="clocation-box">
+            <h3>Our Location 📍</h3>
+            <p>CyberProtect Solutions</p>
+            <p>MIT ADT School of Computing</p>
+            <p>Solapur-Pune Highway, Loni Kalbhor</p>
+            <p>India, Maharashtra 412201</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="c-content-block join-quest">
+        <h3>Join Our Quest ⭐️</h3>
+        <p>
+          Ready to embark on this epic adventure? Just watch this space and
+          follow us! 🚀
+        </p>
+        <p>
+          Remember, at CyberProtect Solutions, we don't just protect data; we
+          safeguard business plans. Reach out, and let's weave some powerful
+          incantations for your security! 🔐✨
+        </p>
+      </div>
 
       {/* Enquiry Form Section */}
       <section
@@ -127,7 +137,7 @@ const ContactPage = () => {
         style={{
           maxWidth: 500,
           margin: "10px auto",
-          marginTop: "-250px",
+          marginTop: "20px",
           marginBottom: "30px",
           background: "white",
           borderRadius: 12,
