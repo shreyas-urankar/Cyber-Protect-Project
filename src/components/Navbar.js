@@ -1,19 +1,26 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.jpg";
-import { FaBars, FaChevronDown } from "react-icons/fa";
+import { FaBars, FaChevronDown, FaTimes } from "react-icons/fa";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdown, setDropdown] = useState(null);
-  const [showNavbar, setShowNavbar] = useState(true); // Start visible
+  const [showNavbar, setShowNavbar] = useState(true);
   const [isInteracting, setIsInteracting] = useState(false);
-  const [isAtTop, setIsAtTop] = useState(window.scrollY === 0); // Track if at top
+  const [isAtTop, setIsAtTop] = useState(window.scrollY === 0);
+  const [activeLink, setActiveLink] = useState("");
   const lastMouseY = useRef(window.scrollY);
-  const lastScrollY = useRef(window.scrollY); // Track last scroll position
+  const lastScrollY = useRef(window.scrollY);
   const hideTimeout = useRef(null);
   const navbarRef = useRef(null);
+  const location = useLocation();
+
+  // Update active link based on current location
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
 
   const startHideTimeout = useCallback(() => {
     if (hideTimeout.current) {
@@ -37,12 +44,12 @@ const Navbar = () => {
         clearTimeout(hideTimeout.current);
       }
     } else if (currentScrollY < lastScrollY.current) {
-      setShowNavbar(true); // Show immediately when scrolling up
+      setShowNavbar(true);
       if (hideTimeout.current) {
         clearTimeout(hideTimeout.current);
       }
     } else if (!isInteracting) {
-      startHideTimeout(); // Start 1.3s delay when scrolling down
+      startHideTimeout();
     }
     lastScrollY.current = currentScrollY;
   }, [isInteracting, startHideTimeout]);
@@ -50,7 +57,7 @@ const Navbar = () => {
   const handleMouseMove = useCallback(
     (e) => {
       if (isAtTop || isInteracting) {
-        return; // Ignore mouse movement when at top or interacting
+        return;
       }
       const currentMouseY = e.clientY;
       if (currentMouseY < lastMouseY.current || currentMouseY < 100) {
@@ -75,7 +82,7 @@ const Navbar = () => {
   const handleMouseLeave = useCallback(() => {
     setIsInteracting(false);
     if (!isAtTop) {
-      startHideTimeout(); // Start 1.3s delay when leaving
+      startHideTimeout();
     }
   }, [isAtTop, startHideTimeout]);
 
@@ -87,6 +94,25 @@ const Navbar = () => {
     }
   }, []);
 
+  const handleMenuToggle = () => {
+    setMenuOpen(!menuOpen);
+    // Close dropdown when menu is toggled
+    setDropdown(null);
+  };
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+    setDropdown(null);
+  };
+
+  const handleDropdownToggle = (dropdownName) => {
+    if (dropdown === dropdownName) {
+      setDropdown(null);
+    } else {
+      setDropdown(dropdownName);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("scroll", handleScroll);
@@ -95,6 +121,24 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [handleMouseMove, handleScroll]);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setMenuOpen(false);
+        setDropdown(null);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
 
   return (
     <nav
@@ -111,39 +155,61 @@ const Navbar = () => {
 
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li>
-          <Link to="/">Home</Link>
+          <Link 
+            to="/" 
+            className={activeLink === "/" ? "active" : ""}
+            onClick={handleLinkClick}
+          >
+            Home
+          </Link>
         </li>
 
         <li
           className="dropdown"
-          onMouseEnter={() => setDropdown("services")}
-          onMouseLeave={() => setDropdown(null)}
+          onMouseEnter={() => !menuOpen && setDropdown("services")}
+          onMouseLeave={() => !menuOpen && setDropdown(null)}
         >
-          <Link to="#">
+          <Link 
+            to="#" 
+            onClick={() => handleDropdownToggle("services")}
+            className={activeLink.includes("services") ? "active" : ""}
+          >
             Services <FaChevronDown className="dropdown-icon" />
           </Link>
-          {dropdown === "services" && (
+          {(dropdown === "services" || (menuOpen && dropdown === "services")) && (
             <ul className="dropdown-menu">
               <li>
-                <Link to="/technologyconsultant">Technology Consultancy</Link>
+                <Link to="/technologyconsultant" onClick={handleLinkClick}>
+                  Technology Consultancy
+                </Link>
               </li>
               <li>
-                <Link to="/compliance_assessment">Compliance Assessment</Link>
+                <Link to="/compliance_assessment" onClick={handleLinkClick}>
+                  Compliance Assessment
+                </Link>
               </li>
               <li>
-                <Link to="/risk-management">Risk Management</Link>
+                <Link to="/risk-management" onClick={handleLinkClick}>
+                  Risk Management
+                </Link>
               </li>
               <li>
-                <Link to="/cloudsecurity">Cloud Security</Link>
+                <Link to="/cloudsecurity" onClick={handleLinkClick}>
+                  Cloud Security
+                </Link>
               </li>
               <li>
-                <Link to="/aiml">AI/ML Security</Link>
+                <Link to="/aiml" onClick={handleLinkClick}>
+                  AI/ML Security
+                </Link>
               </li>
               <li>
-                <Link to="/iot-security">IOT Security</Link>
+                <Link to="/iot-security" onClick={handleLinkClick}>
+                  IOT Security
+                </Link>
               </li>
               <li>
-                <Link to="/mobilewebsecurity">
+                <Link to="/mobilewebsecurity" onClick={handleLinkClick}>
                   Mobile and Web Development Security
                 </Link>
               </li>
@@ -153,35 +219,49 @@ const Navbar = () => {
 
         <li
           className="dropdown"
-          onMouseEnter={() => setDropdown("resources")}
-          onMouseLeave={() => setDropdown(null)}
+          onMouseEnter={() => !menuOpen && setDropdown("resources")}
+          onMouseLeave={() => !menuOpen && setDropdown(null)}
         >
-          <Link to="#">
+          <Link 
+            to="#" 
+            onClick={() => handleDropdownToggle("resources")}
+            className={activeLink.includes("resources") ? "active" : ""}
+          >
             Resources <FaChevronDown className="dropdown-icon" />
           </Link>
-          {dropdown === "resources" && (
+          {(dropdown === "resources" || (menuOpen && dropdown === "resources")) && (
             <ul className="dropdown-menu">
               <li>
-                <Link to="/blog">Blog</Link>
+                <Link to="/blog" onClick={handleLinkClick}>
+                  Blog
+                </Link>
               </li>
               <li>
-                <Link to="/case-studies">Case Studies</Link>
+                <Link to="/case-studies" onClick={handleLinkClick}>
+                  Case Studies
+                </Link>
               </li>
             </ul>
           )}
         </li>
 
-        <li
-          className="dropdown"
-          onMouseEnter={() => setDropdown("contact")}
-          onMouseLeave={() => setDropdown(null)}
-        >
-          <Link to="/Contact">Contact</Link>
+        <li>
+          <Link 
+            to="/contact" 
+            className={activeLink === "/contact" ? "active" : ""}
+            onClick={handleLinkClick}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
 
-      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-        <FaBars />
+      <button 
+        className="menu-toggle" 
+        onClick={handleMenuToggle}
+        aria-label="Toggle navigation menu"
+      >
+        {menuOpen ? <FaTimes /> : <FaBars />}
       </button>
     </nav>
   );
