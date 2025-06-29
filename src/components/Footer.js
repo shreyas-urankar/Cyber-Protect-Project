@@ -129,11 +129,6 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/devsecops" onClick={handleNavigation("/devsecops")}>
-                <FaDev /> DevSecOps Consultancy
-              </Link>
-            </li>
-            <li>
               <Link
                 to="/cloud-security"
                 onClick={handleNavigation("/cloudsecurity")}

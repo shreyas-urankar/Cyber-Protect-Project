@@ -134,9 +134,6 @@ const Navbar = () => {
                 <Link to="/risk-management">Risk Management</Link>
               </li>
               <li>
-                <Link to="">DevSecOps Consultancy</Link>
-              </li>
-              <li>
                 <Link to="/cloudsecurity">Cloud Security</Link>
               </li>
               <li>
