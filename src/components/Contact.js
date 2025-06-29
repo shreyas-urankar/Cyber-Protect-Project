@@ -1,20 +1,11 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import "../styles/Contact.css";
 import emailjs from "emailjs-com";
 
 const ContactPage = () => {
-  const headerRef = useRef(null);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const scrollToHeader = () => {
-    headerRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
 
   const [form, setForm] = React.useState({ name: "", email: "", message: "" });
   const [status, setStatus] = React.useState("");
@@ -56,7 +47,7 @@ const ContactPage = () => {
   return (
     <div className="contact-page">
       {/* Hero Section */}
-      <section className="hero contact-hero" ref={headerRef}>
+      <section className="hero contact-hero">
         <div className="overlay"></div>
         <div className="decorative-dots">
           <div className="dot"></div>
