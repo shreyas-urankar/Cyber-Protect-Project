@@ -138,18 +138,18 @@ const TechnologyConsultant = () => {
             </div>
           </div>
 
-          {/* Industry Expertise */}
+          {/* Industry Domain */}
           <div className="tcontent-block">
-            <h3>Industry Expertise</h3>
+            <h3>Industry Domain</h3>
             <p>
               Our consultancy services are designed for businesses across
               various industries. We have successfully assisted companies in
               sectors such as finance, healthcare, government, e-commerce, and
-              IT. Our expertise allows us to develop industry-specific solutions
+              IT. Our domain allows us to develop industry-specific solutions
               that align with your unique challenges and goals.
             </p>
 
-            <div className="tindustry-expertise">
+            <div className="tindustry-domain">
               <div className="tindustry-item">
                 <h4>Finance</h4>
               </div>
@@ -278,50 +278,6 @@ const TechnologyConsultant = () => {
                   From consultation to implementation and ongoing support, we're
                   with you at every step.
                 </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Technology Trends Section */}
-          <div className="tcontent-block">
-            <h3>Emerging Technology Trends</h3>
-            <div className="t-trends-container">
-              <div className="t-trend-content">
-                <p>
-                  Stay ahead of the curve with our insights into the latest
-                  technology trends. We continuously monitor and analyze
-                  emerging technologies to help you make informed decisions for
-                  your business.
-                </p>
-                <div className="t-trend-list">
-                  <div className="t-trend-item">
-                    <h4>Artificial Intelligence & Machine Learning</h4>
-                    <p>
-                      Leverage AI/ML to automate processes, gain insights, and
-                      enhance decision-making.
-                    </p>
-                  </div>
-                  <div className="t-trend-item">
-                    <h4>Internet of Things (IoT)</h4>
-                    <p>
-                      Connect and manage devices to create smart, efficient
-                      systems.
-                    </p>
-                  </div>
-                  <div className="t-trend-item">
-                    <h4>Blockchain Technology</h4>
-                    <p>
-                      Implement secure, transparent, and decentralized
-                      solutions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="t-trend-image">
-                <img
-                  src={technology_trends}
-                  alt="Technology Trends Visualization"
-                />
               </div>
             </div>
           </div>
