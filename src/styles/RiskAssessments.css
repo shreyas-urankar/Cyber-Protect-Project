@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Yatra+One&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -500,6 +498,35 @@
     box-shadow: 0 6px 12px rgba(169, 30, 34, 0.4);
 }
 
+/* Navigation Buttons */
+.rnavigation-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.rnav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-blue);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(5, 103, 116, 0.3);
+}
+
+.rnav-button:hover {
+    background: #034a54;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(5, 103, 116, 0.4);
+}
+
 .services-container {
     width: 100%;
     margin-top: 2rem;
@@ -727,6 +754,7 @@
 @media (max-width: 768px) {
     .rmain-title {
         font-size: 2.2rem;
+        padding-top: 3.8%
     }
     .rservice-page-container::before {
         height: 530px;
@@ -754,7 +782,8 @@
     }
 
     .rquick-link-buttons,
-    .rcta-button-group {
+    .rcta-button-group,
+    .rnavigation-buttons {
         flex-direction: column;
         align-items: center;
     }
@@ -762,7 +791,8 @@
     .rquick-link-btn,
     .rcta-button-primary,
     .rcta-button-secondary,
-    .rcta-button-tertiary {
+    .rcta-button-tertiary,
+    .rnav-button {
         width: 100%;
         max-width: 300px;
         justify-content: center;
