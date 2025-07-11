@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/RiskAssessments.css";
+import { Link } from 'react-router-dom';
 import {
   FaBrain,
   FaShieldAlt,
@@ -16,6 +17,7 @@ import ai from "../assets/ai_1.jpg";
 import ai2 from "../assets/ai_2.jpg";
 import ai_audit from "../assets/ai_audits.jpg";
 import ai_security from "../assets/ai_security.png";
+
 const AIMLSecurityAudit = () => {
   return (
     <div className="rservice-page-container">
@@ -319,7 +321,6 @@ const AIMLSecurityAudit = () => {
             </div>
           </div>
 
-          {/* New Section: Our Process, Your Success */}
           <div className="rcontent-block">
             <h2>OUR PROCESS, YOUR SUCCESS</h2>
             <p>
@@ -485,13 +486,38 @@ const AIMLSecurityAudit = () => {
             </div>
           </div>
 
-          <div className="rcontent-block">
-            <h3>Secure Your AI Systems Today</h3>
-            <p>
-              Protect your organization from emerging AI security risks with our
-              comprehensive audit services.
-            </p>
+          <div className="rquick-links">
+            <h3>Explore Our AI Security Services</h3>
+            <div className="rquick-link-buttons">
+              <a href="/ai-model-audit" className="rquick-link-btn">
+                <FaBrain /> Model Audit
+              </a>
+              <a href="/ai-compliance" className="rquick-link-btn">
+                <FaBalanceScale /> Compliance
+              </a>
+              <a href="/ai-threats" className="rquick-link-btn">
+                <FaShieldAlt /> Threat Protection
+              </a>
+              <a href="/ai-tools" className="rquick-link-btn">
+                <FaCode /> Security Tools
+              </a>
+            </div>
           </div>
+
+          <div className="rcta-buttons">
+  <h3>Secure Your AI Systems Today</h3>
+  <div className="rcta-button-group">
+    <Link to="/request-audit" className="rcta-button-primary">
+      Request Audit
+    </Link>
+    <Link to="/contact-expert" className="rcta-button-secondary">
+      Contact Expert
+    </Link>
+    <Link to="/download-brochure" className="rcta-button-tertiary">
+      Download Brochure
+    </Link>
+  </div>
+</div>
         </section>
       </main>
     </div>

@@ -1,4 +1,3 @@
-/* RiskAssessments.css */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Yatra+One&display=swap');
 
 * {
@@ -8,17 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* :root {
-    --primary: #000000;
-    --primary-light: #000000;
-    --secondary: #000000;
-    --dark: #ffffff;
-    --light: #ffffff;
-    --success: #000000;
-    --warning: #000000;
-    --danger: #000000;
-} */
-
 :root {
     --primary-blue: #056774;
     --primary-red: #A91E22;
@@ -26,14 +14,6 @@
     --light-gray: #f8f9fa;
     --dark-text: #333333;
 }
-
-/* .rservice-page-container {
-    min-height: 100vh;
-    background: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-} */
 
 .rservice-page-container {
     min-height: 100vh;
@@ -47,21 +27,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 510px;
+    height: 490px;
     background-color: var(--primary-blue);
     z-index: 0;
 }
-
-/* .rmain-section {
-    flex: 1;
-    padding: 2rem 4rem 3rem;
-    position: relative;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 10;
-} */
 
 .rmain-section {
     position: relative;
@@ -72,14 +41,6 @@
     margin: 0 auto;
 }
 
-/* .rheader-section {
-    margin-bottom: 3rem;
-    text-align: center;
-    width: 100%;
-    max-width: 1000px;
-    color: white;
-} */
-
 .rheader-section {
     margin-bottom: 2rem;
     text-align: center;
@@ -87,29 +48,12 @@
     padding-top: 2rem;
 }
 
-/* .rmain-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 1rem;
-    margin-top: 10rem;
-    text-shadow: none;
-    position: relative;
-    display: inline-block;
-} */
-
 .rmain-title {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-/* .rheader-line {
-    height: 3px;
-    width: 150px;
-    background: white;
-    margin: 0 auto;
-} */
 .rheader-line {
     height: 4px;
     width: 100px;
@@ -152,18 +96,6 @@
     text-align: center;
 }
 
-/* .rservice-intro {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    margin-bottom: 3rem;
-    text-align: center;
-} */
-
-/* .rcontent-block {
-    margin-bottom: 3rem;
-    width: 100%;
-} */
-
 .rcontent-block {
     background: var(--white);
     border-radius: 10px;
@@ -172,30 +104,12 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* .rcontent-block h3 {
-    font-size: 2rem;
-    color: #A91E22;
-    margin-bottom: 1.5rem;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-} */
-
 .rcontent-block h3 {
     font-size: 2rem;
     color: var(--primary-red);
     margin-bottom: 1.5rem;
     text-align: center;
 }
-
-/* .rcontent-block p {
-    font-size: 1.2rem;
-    line-height: 1.7;
-    color: black;
-    margin-bottom: 1.2rem;
-    text-align: center;
-} */
 
 .rcontent-block p {
     font-size: 1.2rem;
@@ -204,14 +118,6 @@
     margin-bottom: 1.2rem;
     text-align: center;
 }
-
-/* Process Container */
-/* .rprocess-container {
-    display: flex;
-    gap: 3rem;
-    margin-top: 2rem;
-    align-items: center;
-} */
 
 .rprocess-container {
     max-width: 800px;
@@ -231,13 +137,6 @@
     display: block;
 }
 
-/* .rprocess-steps {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-} */
-
 .rprocess-steps {
     display: flex;
     flex-direction: column;
@@ -245,30 +144,11 @@
     margin-top: 2rem;
 }
 
-/* .rprocess-step {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-} */
-
 .rprocess-step {
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
 }
-
-/* .rstep-number {
-    width: 40px;
-    height: 40px;
-    background-color: #056774;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    flex-shrink: 0;
-} */
 
 .rstep-number {
     width: 42px;
@@ -284,25 +164,12 @@
     flex-shrink: 0;
 }
 
-/* .rstep-content h4 {
-    font-size: 1.3rem;
-    color: #056774;
-    margin-bottom: 0.5rem;
-} */
-
 .rstep-content h4 {
     font-size: 1.3rem;
     color: var(--primary-blue);
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
-
-/* .rstep-content p {
-    font-size: 1rem;
-    color: #333;
-    text-align: left;
-    margin-bottom: 0;
-} */
 
 .rstep-content p {
     font-size: 1.05rem;
@@ -311,7 +178,6 @@
     text-align: left;
 }
 
-/* Services List */
 .rservices-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -334,12 +200,6 @@
 .rservice-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(5, 103, 116, 0.3);
-}
-
-.rservice-icon-container {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
 }
 
 .rservice-icon {
@@ -391,7 +251,6 @@
     font-weight: bold;
 }
 
-/* Industry Expertise */
 .rindustry-expertise {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -434,7 +293,6 @@
     text-align: center;
 }
 
-/* Tools Grid */
 .rtools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -491,7 +349,6 @@
     font-weight: bold;
 }
 
-/* Benefits Grid */
 .rbenefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -532,7 +389,6 @@
     text-align: center;
 }
 
-/* Solutions Showcase */
 .rsolutions-showcase {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -611,7 +467,6 @@
     font-weight: bold;
 }
 
-/* CTA Section */
 .rcta-section {
     display: flex;
     flex-direction: column;
@@ -645,39 +500,6 @@
     box-shadow: 0 6px 12px rgba(169, 30, 34, 0.4);
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-    .rmain-section {
-        padding: 2rem;
-    }
-    .rservice-page-container::before {
-        height: 360px;
-    }
-
-    
-    .rmain-title {
-        font-size: 2.5rem;
-    }
-    
-    .rprocess-container {
-        flex-direction: column;
-    }
-    
-    .rprocess-image,
-    .rprocess-steps {
-        width: 100%;
-    }
-    
-    .rservices-list {
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .rbenefits-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* New container styles */
 .services-container {
     width: 100%;
     margin-top: 2rem;
@@ -708,8 +530,190 @@
     transform: scale(1.03);
 }
 
+.rtestimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.rtestimonial-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid var(--primary-blue);
+}
+
+.rtestimonial-content p {
+    font-style: italic;
+    color: var(--dark-text);
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.rtestimonial-author {
+    text-align: left;
+}
+
+.rtestimonial-author strong {
+    display: block;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.rtestimonial-author span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Quick Links Section */
+.rquick-links {
+    background: var(--white);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    max-width: 1000px;
+}
+
+.rquick-links h3 {
+    color: var(--primary-red);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.rquick-link-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.rquick-link-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-blue);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(5, 103, 116, 0.3);
+}
+
+.rquick-link-btn:hover {
+    background: #034a54;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(5, 103, 116, 0.4);
+}
+
+/* CTA Buttons Section */
+.rcta-buttons {
+    background: var(--primary-blue);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 3rem auto;
+    text-align: center;
+    max-width: 1000px;
+}
+
+.rcta-buttons h3 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.rcta-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.rcta-button-primary,
+.rcta-button-secondary,
+.rcta-button-tertiary {
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1rem;
+}
+
+.rcta-button-primary {
+    background: var(--primary-red);
+    color: white;
+    box-shadow: 0 4px 8px rgba(169, 30, 34, 0.3);
+}
+
+.rcta-button-primary:hover {
+    background: #8b1a1e;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(169, 30, 34, 0.4);
+}
+
+.rcta-button-secondary {
+    background: white;
+    color: var(--primary-blue);
+    border: 2px solid white;
+}
+
+.rcta-button-secondary:hover {
+    background: transparent;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.rcta-button-tertiary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.rcta-button-tertiary:hover {
+    background: white;
+    color: var(--primary-blue);
+    transform: translateY(-3px);
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
+    .rmain-section {
+        padding: 2rem;
+    }
+    .rservice-page-container::before {
+        height: 360px;
+    }
+
+    .rmain-title {
+        font-size: 2.5rem;
+    }
+    
+    .rprocess-container {
+        flex-direction: column;
+    }
+    
+    .rprocess-image,
+    .rprocess-steps {
+        width: 100%;
+    }
+    
+    .rservices-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .rbenefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .deployment-security-container {
         flex-direction: column;
     }
@@ -717,28 +721,6 @@
     .security-image-wrapper {
         width: 100%;
         margin-top: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .security-image {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 480px) {
-    .security-image {
-        max-width: 95%;
-    }
-    
-    @media (hover: none) {
-        .security-image:hover {
-            transform: none;
-        }
     }
 }
 
@@ -761,6 +743,29 @@
     
     .rsolutions-showcase {
         grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .security-image {
+        max-width: 80%;
+    }
+
+    .rquick-link-buttons,
+    .rcta-button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rquick-link-btn,
+    .rcta-button-primary,
+    .rcta-button-secondary,
+    .rcta-button-tertiary {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
     }
 }
 
@@ -801,5 +806,15 @@
     
     .rstep-content p {
         text-align: left;
+    }
+
+    .security-image {
+        max-width: 95%;
+    }
+    
+    @media (hover: none) {
+        .security-image:hover {
+            transform: none;
+        }
     }
 }

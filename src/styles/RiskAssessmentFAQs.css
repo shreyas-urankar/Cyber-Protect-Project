@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Yatra+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-blue: #056774;
+    --primary-red: #A91E22;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --dark-text: #333333;
+}
+
+.fservice-page-container {
+    min-height: 100vh;
+    background: var(--light-gray);
+    position: relative;
+}
+
+.fservice-page-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 430px;
+    background-color: var(--primary-blue);
+    z-index: 0;
+}
+
+.fmain-section {
+    position: relative;
+    z-index: 1;
+    padding: 2rem 4rem;
+    max-width: 1200px;
+    padding-top: 4.5rem;
+    margin: 0 auto;
+}
+
+.fheader-section {
+    margin-bottom: 0rem;
+    text-align: center;
+    color: var(--white);
+    padding-top: 1rem;
+}
+
+.fmain-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.fheader-line {
+    height: 4px;
+    width: 100px;
+    background: var(--white);
+    margin: 0 auto 2rem;
+}
+
+.fservice-overview {
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    color: var(--white);
+}
+
+.f-tech-icon-main {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: ffloat 3s ease-in-out infinite;
+}
+
+@keyframes ffloat {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.fservice-intro {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 3rem;
+    margin-top: -2rem;
+    text-align: center;
+}
+
+.fcontent-block {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.fcontent-block h3 {
+    font-size: 2rem;
+    color: var(--primary-red);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.fcontent-block p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--dark-text);
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.ffaqs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.ffaq-item {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-blue);
+}
+
+.ffaq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(5, 103, 116, 0.2);
+}
+
+.ffaq-item h4 {
+    font-size: 1.3rem;
+    color: var(--primary-red);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ffaq-item p {
+    font-size: 1rem;
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+.fcta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 3rem auto 1rem;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.fcta-button {
+    padding: 0.75rem 2rem;
+    background: var(--primary-red);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(169, 30, 34, 0.3);
+}
+
+.fcta-button:hover {
+    transform: translateY(-3px);
+    background: #8b1a1e;
+    box-shadow: 0 6px 12px rgba(169, 30, 34, 0.4);
+}
+
+@media (max-width: 1024px) {
+    .fmain-section {
+        padding: 2rem;
+    }
+    .fservice-page-container::before {
+        height: 360px;
+    }
+    
+    .fmain-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .fmain-title {
+        font-size: 2.2rem;
+    }
+    .fservice-page-container::before {
+        height: 530px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fmain-section {
+        padding: 1.5rem;
+    }
+    .fservice-page-container::before {
+        height: 320px;
+    }
+    .fmain-title {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .fservice-intro {
+        font-size: 1rem;
+    }
+    
+    .fcontent-block h3 {
+        font-size: 1.5rem;
+    }
+}

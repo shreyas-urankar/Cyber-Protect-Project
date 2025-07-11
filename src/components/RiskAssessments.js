@@ -11,10 +11,11 @@ import {
   FaUserShield,
   FaBalanceScale,
   FaClipboardCheck,
+  FaBook,
+  FaStar,
+  FaQuestionCircle,
 } from "react-icons/fa";
-// import riskAssessmentProcess from '../assets/risk-assessment-process.jpg';
-// import securityFramework from '../assets/security-framework.jpg';
-// import complianceStandards from '../assets/compliance-standards.jpg';
+
 const riskAssessmentProcess =
   "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
 const securityFramework =
@@ -353,6 +354,21 @@ const RiskAssessments = () => {
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="rcontent-block">
+            <h3>Explore More</h3>
+            <div className="rnavigation-buttons">
+              <Link to="/case-studies" className="rnav-button">
+                View Case Studies <FaBook style={{ marginLeft: "8px" }} />
+              </Link>
+              <Link to="/testimonials" className="rnav-button">
+                Read Testimonials <FaStar style={{ marginLeft: "8px" }} />
+              </Link>
+              <Link to="/faqs" className="rnav-button">
+                See FAQs <FaQuestionCircle style={{ marginLeft: "8px" }} />
+              </Link>
             </div>
           </div>
 
